@@ -6,8 +6,7 @@
     scroll-behavior: smooth; }
 
 
-/*1f242d*/
-body { background-color: #141E30; }
+body { background-color: #040608; }
 
 .importante { color: yellow; }
 
@@ -25,7 +24,7 @@ body { background-color: #141E30; }
 
                   background: #141E30;
                   background: -webkit-linear-gradient(to top, #243B55, #141E30);
-                  background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/main_background.png);
+                  background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/main_background.webp);
 
                   background-position: top;
                   background-size: cover;
@@ -77,7 +76,7 @@ body { background-color: #141E30; }
                                                      filter: drop-shadow(0 50px 15px yellow);
                                                      transform: translateY(-50px);
 
-                                                     animation-name: carlos_move;
+                                                     animation-name: float;
                                                      animation-duration: 2s;
                                                      animation-timing-function: ease-in-out;
                                                      animation-direction: alternate-reverse;
@@ -85,7 +84,7 @@ body { background-color: #141E30; }
                                                      animation-iteration-count: infinite; }
 
 
-@keyframes carlos_move {  0% { transform: translateY(-50px); }
+@keyframes float {  0% { transform: translateY(-50px); }
                         100% { transform: translateY(-20px); } }
 
 
@@ -198,7 +197,7 @@ body { background-color: #141E30; }
 
                   background: #141E30;
                   background: -webkit-linear-gradient(to top, #243B55, #141E30);
-                  background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/pain.png");
+                  background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/pain.webp");
 
                   background-position: top;
                   background-size: cover;
@@ -238,10 +237,19 @@ body { background-color: #141E30; }
                                                                                                                        color: white;
                                                                                                                        margin-left: 2px; }
 
+                                  
+                                  
+
                                   .pain-img { width: 40%;
                                               border-radius: 5px;
-                                              margin-left: 5px;
-                                              filter: drop-shadow(0 20px 20px yellow); }
+                                              filter: drop-shadow(0 10px 10px yellow);
+         
+                                              animation-name: float;
+                                              animation-duration: 2s;
+                                              animation-direction: alternate-reverse;
+                                              animation-timing-function: ease-in-out;
+                                              animation-iteration-count: infinite;
+                                              animation-fill-mode: forwards; }
 
 
 @media screen and (max-width: 1300px) { .pain-content { width: 80%; } }
