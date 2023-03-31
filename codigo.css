@@ -35,6 +35,8 @@ body { background-color: #040608; }
                   
                   .main-content { width: 50%;
                                   padding: 20px;
+                                  padding-top: 60px;
+                                  margin-top: 60px;
 
                                   display: flex;
                                   flex-direction: column;
@@ -65,7 +67,7 @@ body { background-color: #040608; }
                                                        font-weight: 300;
                                                        text-align: center; }
                   
-                  .main-img-container { width: 50%;
+                  .main-img-container { width: 40%;
 
                                         display: flex;
                                         justify-content: center;
@@ -197,7 +199,7 @@ body { background-color: #040608; }
 
                   background: #141E30;
                   background: -webkit-linear-gradient(to top, #243B55, #141E30);
-                  background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/pain.webp");
+                  background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/pain2.webp");
 
                   background-position: top;
                   background-size: cover;
@@ -221,8 +223,7 @@ body { background-color: #040608; }
                                                           display: flex;
                                                           flex-direction: column;
                                                           justify-content: center;
-                                                          align-items: center;
-                                                          margin-right: 5px; }
+                                                          align-items: center; }
     
                                                           .pain-content-dolores div { font-size: 20px;
                                                                                       font-family: "Poppins",sans-serif;
@@ -244,13 +245,16 @@ body { background-color: #040608; }
                                               border-radius: 5px;
                                               filter: drop-shadow(0 10px 10px yellow);
          
-                                              animation-name: float;
+                                              animation-name: float2;
                                               animation-duration: 2s;
                                               animation-direction: alternate-reverse;
                                               animation-timing-function: ease-in-out;
                                               animation-iteration-count: infinite;
                                               animation-fill-mode: forwards; }
 
+
+@keyframes float2 { 0% { transform: translateY(-20px); }
+                  100% { transform: translateY(20px); } }
 
 @media screen and (max-width: 1300px) { .pain-content { width: 80%; } }
 @media screen and (max-width: 970px) { .pain-content { width: 100%; } }
@@ -323,6 +327,55 @@ body { background-color: #040608; }
                                        .problema-container { padding: 40px 15px; } }
 
 
+
+/* Codigo seccion problema 2*/
+
+.problema2-container { width: 100%;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 40px 20px;
+                       font-size: 20px;
+                       font-family: "Poppins",sans-serif;
+                       opacity: 0;
+                       transform: scale(.8);
+                       transition: opacity .5s ease-in-out, transform .4s ease-in-out;
+                       transition-delay: .3s; }
+
+.problema2-container-view { opacity: 1;
+                            transform: scale(1); }
+
+
+                      .problema2-container h4 { font-size: 1.5em;
+                                                font-family: "Righteous","Poppins",sans-serif;
+                                                font-weight: bold;
+                                                margin-bottom: 20px;
+                                                text-align: center;
+                                                color: white; }
+
+
+                      .problema2-container p { font-size: .8em;
+                                               color: white;
+                                               font-weight: normal;
+                                               margin-bottom: 20px;
+                                               text-align: center;
+                                               width: 50%; }
+
+                       .problema2-logo { width: 30px;
+                                         margin-bottom: 20px; }
+                       
+                       .problema2-flecha { animation-name: flecha_abajo;
+                                           animation-duration: .5s;
+                                           animation-iteration-count: infinite;
+                                           animation-fill-mode: forwards;
+                                           animation-direction: alternate-reverse;
+                                           animation-timing-function: ease-in-out; }
+
+@media screen and (max-width: 880px) { .problema2-container p { width: 70%; } }
+@media screen and (max-width: 700px) { .problema2-container p { width: 90%; } }
+@media screen and (max-width: 550px) { .problema2-container p { width: 100%; }
+                                       .problema2-container { padding: 40px 15px; } }
 
 
 
