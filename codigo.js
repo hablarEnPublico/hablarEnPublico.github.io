@@ -22,3 +22,7 @@ const problema2_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isInter
 
 const problema2_watch = new IntersectionObserver(problema2_view);
 problema2_watch.observe(problema2_container);
+
+
+
+
