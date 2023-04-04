@@ -685,4 +685,54 @@ body { background-color: #040608; }
                                                      text-align: center;
                                                      border: 2px solid yellow;
                                                      border-radius: 15px;
-                                                     padding: 8px 15px; }
+                                                     padding: 8px 15px;
+                                                     margin-bottom: 20px; }
+
+                        .beneficios-bono-container { width: 60%;
+                                                     border-radius: 15px;
+                                                     background-color: #0009;
+                                                     padding: 20px;
+
+                                                     display: flex;
+                                                     justify-content: flex-start;
+                                                     align-items: center; }
+
+                                                     .beneficios-bono-img { width: 40%;
+                                                                            filter: drop-shadow(0 20px 30px #123); }
+
+                                                     .beneficios-bono-content { display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: flex-start;
+                                                                                align-items: flex-start;
+
+                                                                                font-size: 20px;
+                                                                                font-family: "Righteous","Poppins",sans-serif; }
+
+                                                                                .beneficios-bono-content h4 { font-size: 1.2em;
+                                                                                                              color: white;
+                                                                                                              font-weight: bold;
+                                                                                                              margin-bottom: 20px;
+                                                                                                              text-align: left;
+                                                                                                              padding-bottom: 2px;
+                                                                                                              border-bottom: 1px solid #ccc; }
+
+                                                                                .beneficios-bono-content p  { font-size: .8em;
+                                                                                                              color: #ccc;
+                                                                                                              text-align: left;
+                                                                                                              font-family: "Poppins",sans-serif; }
+
+@media screen and (max-width: 1090px) { .beneficios-bono-img { width: 50%; }
+                                        .beneficios-bono-container { width: 80%; } }
+
+@media screen and (max-width: 780px) { .beneficios-bono-container { width: 100%; } }
+@media screen and (max-width: 630px) { .beneficios-bono-container  { flex-direction: column; }
+                                                                   
+                                                                   .beneficios-bono-content { width: 70%; }
+                                                                   .beneficios-bono-img { width: 70%; } }
+
+@media screen and (max-width: 480px) { .beneficios-bono-img { width: 80%; }
+                                       .beneficios-bono-content { width: 90%; }
+                                                                .beneficios-bono-content p { font-size: .7em; } }
+
+@media screen and (max-width: 430px) { .beneficios-bono-img {width: 100%;}
+                                       .beneficios-bono-content { width: 100%; } }
