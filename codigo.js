@@ -36,17 +36,26 @@ problema2_watch.observe(problema2_container);
 
 // Codigo seccion curso
 
+const curso_tittle = document.querySelector(".curso-tittle");
+
+const curso_tittle_view = (entradas)=>{ entradas.forEach(entrada=>{ if(entrada.isIntersecting) { curso_tittle.style.opacity = "1";
+	                                                                                             curso_tittle.style.transform = `scale(1)`; }
+                                                                    else { curso_tittle.style.opacity = "0";
+                                                                           curso_tittle.style.transform = `scale(.5)`; }  });  }
+
+const curso_tittle_watch = new IntersectionObserver(curso_tittle_view);
+curso_tittle_watch.observe(curso_tittle);
+
+
+
+
 const curso_img = document.querySelector(".curso-img");
 const curso_content = document.querySelector(".curso-content");
 let mq = matchMedia("(max-width:720px)");
 
 const inf_720px = ()=>{ const curso_img_view = (entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting) { curso_img.style.transform = `translateY(0)`;
                                                                                                                     curso_content.style.transform = `translateY(0)`;
-                                                                                                                    curso_content.style.opacity = "1";  }
-
-                                                                                       else { curso_img.style.transform = `translateY(25%)`;
-                                                                                              curso_content.style.transform = `translateY(-25%)`;
-                                                                                              curso_content.style.opacity = "0"; }  });  }
+                                                                                                                    curso_content.style.opacity = "1";  }    });  }
 
                         const curso_img_watch = new IntersectionObserver(curso_img_view);
                         curso_img_watch.observe(curso_img); }
@@ -54,9 +63,7 @@ const inf_720px = ()=>{ const curso_img_view = (entryes)=>{ entryes.forEach(entr
 // funcion para superior a 720px
 
 const sup_720px = ()=>{ const curso_img_view = (entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting) { curso_img.classList.add("curso-img-view");
-                                                                                                                    curso_content.classList.add("curso-content-view");  }
-                                                               else { curso_img.classList.remove("curso-img-view");
-                                                                      curso_content.classList.remove("curso-content-view"); }  });  }
+                                                                                                                    curso_content.classList.add("curso-content-view");  }  });  }
 
                         const curso_img_watch = new IntersectionObserver(curso_img_view);
                         curso_img_watch.observe(curso_img); }
