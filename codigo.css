@@ -660,8 +660,7 @@ body { background-color: #040608; }
                         padding: 20px;
 
                         background: #141E30;
-                        background: -webkit-linear-gradient(to top, #243B55, #141E30);
-                        background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/main_background2.webp");
+                        background: linear-gradient(to top, #000, #04060899), url("multimedia/imagenes/beneficios_bg.webp");
                         background-position: center;
                         background-size: cover;
                         background-attachment: scroll;
@@ -726,6 +725,9 @@ body { background-color: #040608; }
                                                                                                               color: green;
                                                                                                               text-align: left;
                                                                                                               font-family: "Poppins",sans-serif; }
+
+                         .beneficios-bono-container2 { flex-direction: row-reverse; }
+                         .beneficios-bono-container4 { flex-direction: row-reverse; }   
 
 
 @media screen and (max-width: 1090px) { .beneficios-bono-img { width: 50%; }
