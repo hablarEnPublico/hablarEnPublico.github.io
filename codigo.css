@@ -413,7 +413,7 @@ body { background-color: #040608; }
                                     margin-left: 10px;
                                     transform: translateX(-50%);
                                     z-index: 100;
-                                    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+                                    transition: transform 1s ease-in-out 1s, opacity 1s ease-in-out 1s;
                                     opacity: 0; }
 
                                     .curso-content-view { transform: translateX(0);
@@ -680,18 +680,11 @@ body { background-color: #040608; }
                                                   font-family: "Poppins",sans-serif;
                                                   margin-bottom: 20px; }
 
-                        .beneficios-container span { font-size: 1em;
-                                                     color: white;
-                                                     text-align: center;
-                                                     border: 2px solid yellow;
-                                                     border-radius: 15px;
-                                                     padding: 8px 15px;
-                                                     margin-bottom: 20px; }
-
                         .beneficios-bono-container { width: 60%;
                                                      border-radius: 15px;
                                                      background-color: #0009;
                                                      padding: 20px;
+                                                     margin-bottom: 15px;
 
                                                      display: flex;
                                                      justify-content: flex-start;
@@ -720,6 +713,20 @@ body { background-color: #040608; }
                                                                                                               color: #ccc;
                                                                                                               text-align: left;
                                                                                                               font-family: "Poppins",sans-serif; }
+
+                                                                                .beneficios-bono-content span { font-size: .8em;
+                                                                                                                color: white;
+                                                                                                                text-align: left;
+                                                                                                                border: 2px solid yellow;
+                                                                                                                border-radius: 15px;
+                                                                                                                padding: 8px 15px;
+                                                                                                                margin-bottom: 8px; }
+
+                                                                                .beneficios-bono-content h5 { font-size: .8em;
+                                                                                                              color: green;
+                                                                                                              text-align: left;
+                                                                                                              font-family: "Poppins",sans-serif; }
+
 
 @media screen and (max-width: 1090px) { .beneficios-bono-img { width: 50%; }
                                         .beneficios-bono-container { width: 80%; } }
