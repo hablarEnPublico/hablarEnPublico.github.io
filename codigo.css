@@ -692,8 +692,8 @@ body { background-color: #040608; }
                         align-items: center;
                         font-size: 20px;
                         font-family: "Righteous","Poppins",sans-serif;
-                        margin-bottom: 20px;
                         padding: 20px;
+                        padding-bottom: 40px;
 
                         background: #141E30;
                         background: linear-gradient(to top, #000, #04060899), url("multimedia/imagenes/beneficios_bg.webp");
@@ -782,3 +782,44 @@ body { background-color: #040608; }
 
 @media screen and (max-width: 430px) { .beneficios-bono-img {width: 100%;}
                                        .beneficios-bono-content { width: 100%; } }
+
+
+
+
+
+/* Codigo seccion oferta_fake*/
+
+.oferta_fake-container { width: 100%;
+                         background-color: white;
+
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         padding: 20px;
+                         padding-top: 40px; }
+
+                         .oferta_fake-content { width: 60%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-items: center;
+
+                                                font-size: 20px;
+                                                font-family: "Righteous","Poppins",sans-serif; }
+
+                                                .oferta_fake-container h4 { font-size: 1.5em;
+                                                                            font-weight: bold;
+                                                                            text-align: center;
+                                                                            color: #123;
+                                                                            margin-bottom: 10px; }
+
+                                               .oferta_fake-container img  { width: 100%; }
+
+                                               .oferta_fake_mobil { display: none; }
+
+@media screen and (max-width: 1070px) { .oferta_fake-content { width: 80%; } }
+@media screen and (max-width: 910px) {  .oferta_fake-content { width: 100%; } }
+
+@media screen and (max-width: 650px) { .oferta_fake { display: none; }
+                                       .oferta_fake_mobil { display: flex;
+                                                            width: 50%; } }
