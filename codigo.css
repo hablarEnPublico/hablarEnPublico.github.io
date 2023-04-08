@@ -413,7 +413,7 @@ body { background-color: #040608; }
 
 
 .curso-container { width: 100%;
-                   height: 70vh;
+                   height: 50vh;
                    min-height: 740px;
                    display: flex;
                    flex-direction: row;
@@ -696,7 +696,7 @@ body { background-color: #040608; }
                         padding-bottom: 40px;
 
                         background: #141E30;
-                        background: linear-gradient(to top, #000, #04060899), url("multimedia/imagenes/beneficios_bg.webp");
+                        background: linear-gradient(to top, #000, #04060899);
                         background-position: center;
                         background-size: cover;
                         background-attachment: scroll;
@@ -820,6 +820,54 @@ body { background-color: #040608; }
 @media screen and (max-width: 1070px) { .oferta_fake-content { width: 80%; } }
 @media screen and (max-width: 910px) {  .oferta_fake-content { width: 100%; } }
 
-@media screen and (max-width: 650px) { .oferta_fake { display: none; }
+/*@media screen and (max-width: 650px) { .oferta_fake { display: none; }
                                        .oferta_fake_mobil { display: flex;
-                                                            width: 50%; } }
+                                                            width: 50%; } }*/
+
+
+
+ /* Codigo seccion problema 3*/
+.problema3-container { width: 100%;
+                       height: 80vh;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 40px 20px;
+                       font-size: 20px;
+                       font-family: "Poppins",sans-serif;
+                       opacity: 0;
+                       transform: scale(.8);
+                       transition: opacity .5s ease-in-out, transform .4s ease-in-out;
+                       transition-delay: .2s; }
+
+.problema3-container-view { opacity: 1;
+                            transform: scale(1); }
+
+
+                      .problema3-container h4 { font-size: 1.5em;
+                                                font-family: "Righteous","Poppins",sans-serif;
+                                                font-weight: bold;
+                                                margin-bottom: 20px;
+                                                text-align: center;
+                                                color: white; }
+
+
+                      .problema3-container p { font-size: .8em;
+                                               color: white;
+                                               font-weight: normal;
+                                               margin-bottom: 20px;
+                                               text-align: center;
+                                               width: 50%; }
+                       
+                       .problema3-flecha { animation-name: flecha_abajo;
+                                           animation-duration: .5s;
+                                           animation-iteration-count: infinite;
+                                           animation-fill-mode: forwards;
+                                           animation-direction: alternate-reverse;
+                                           animation-timing-function: ease-in-out; }
+
+@media screen and (max-width: 880px) { .problema3-container p { width: 70%; } }
+@media screen and (max-width: 700px) { .problema3-container p { width: 90%; } }
+@media screen and (max-width: 550px) { .problema3-container p { width: 100%; }
+                                       .problema3-container { padding: 40px 15px; } }

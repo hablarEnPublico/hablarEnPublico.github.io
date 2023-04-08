@@ -24,7 +24,15 @@ const problema2_watch = new IntersectionObserver(problema2_view);
 problema2_watch.observe(problema2_container);
 
 
+//  Codigo efecto para problema3-container 
 
+const problema3_container = document.querySelector(".problema3-container");
+
+const problema3_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ problema3_container.classList.add("problema3-container-view"); }
+                                                              else problema3_container.classList.remove("problema3-container-view");   }); }
+
+const problema3_watch = new IntersectionObserver(problema3_view);
+problema3_watch.observe(problema3_container);
 
 
 
