@@ -837,8 +837,7 @@ body { background-color: #040608; }
                        font-family: "Poppins",sans-serif;
                        opacity: 0;
                        transform: scale(.8);
-                       transition: opacity .5s ease-in-out, transform .4s ease-in-out;
-                       transition-delay: .2s; }
+                       transition: opacity .5s ease-in-out, transform .4s ease-in-out; }
 
 .problema3-container-view { opacity: 1;
                             transform: scale(1); }
@@ -966,7 +965,16 @@ body { background-color: #040608; }
                                                                                                                                            font-weight: bold; }
                    
                    .oferta-precio-img { width: 40%; }
-                   .oferta-metodos-img { width: 40%; }
+                   .oferta-metodos-img { width: 40%;
+                                         padding: 0px 10px; }
+                   .oferta-flecha { margin-top: 20px;
+                                    width: 80px;
+                                    animation-name: flecha_abajo;
+                                    animation-duration: .5s;
+                                    animation-iteration-count: infinite;
+                                    animation-fill-mode: forwards;
+                                    animation-direction: alternate-reverse;
+                                    animation-timing-function: ease-in-out; }
 
 
 @media screen and (max-width: 1080px) { .oferta-precio-img,.oferta-img,.oferta-resumen-container,.oferta-metodos-img { width: 70%; } }
@@ -983,3 +991,64 @@ body { background-color: #040608; }
 
                                                                    .oferta-resumen-container h4 { text-align: left;
                                                                                                   font-size: 1.2em; } }
+
+
+
+
+
+/* Codigo seccion call to action*/
+
+.call-container { width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 40px 15px;
+                  background-color: white;
+                  cursor: pointer; }
+
+                  .call-content { width: 20%;
+                                  padding: 10px 35px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  border-radius: 20px;
+                                  background-color: #123;
+                                  border: 4px solid #123;
+                                  font-weight: bold;
+
+                                  font-size: 20px;
+                                  font-family: "Poppins",sans-serif;
+                                  position: relative;
+                                  overflow: hidden; }
+
+                                  .call-content::after { content: "Registrate aquí";
+                                                         width: 100%;
+                                                         height: 100%;
+                                                         display: flex;
+                                                         justify-content: center;
+                                                         align-items: center;
+                                                         font-size: 1em;
+
+                                                         background-color: white;
+                                                         position: absolute;
+                                                         top: 0;
+                                                         left: 0;
+                                                         transform: translateX(100%);
+                                                         border-radius: 20px;
+
+                                                         transition: transform .2s ease-in-out; }
+
+                                                         .call-content:hover::after { transform: translateX(0); }
+
+                                  .call-content span { font-size: 1em; 
+                                                       color: white;
+                                                       text-align: center;
+                                                       font-weight: bold; }
+
+@media screen and (max-width: 1160px) { .call-content { width: 40%; } }
+@media screen and (max-width: 800px) { .call-content { width: 50%; } }
+@media screen and (max-width: 500px) { .call-content { width: 60%; }
+                                       .call-container { padding: 20px 15px; } }
+
+@media screen and (max-width: 440px) { .call-content { width: 70%; }
+                                       .call-container { padding: 15px; } }
