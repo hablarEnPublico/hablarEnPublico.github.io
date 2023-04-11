@@ -83,3 +83,24 @@ if(mq.matches) { inf_720px(); }
 // Si ingresa por el computador - superior a 720px 
 else { sup_720px(); }
 
+
+
+
+
+
+
+
+//  Codigo redireccion a link de afiliacion con call-container
+
+const call_container = document.querySelector(".call-container");
+const call_overlay = document.querySelector(".call-overlay");
+
+call_container.addEventListener("click", ()=>{ window.open("www.google.com") });
+let overlay_efect = 0; 
+
+const call_container_view = (entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting) {  overlay_efect++;
+	                                                                                              if(overlay_efect == 1){ setInterval(()=>{ call_overlay.classList.add("call-overlay-view");
+	                                                                                                                                        setTimeout(()=>{ call_overlay.classList.remove("call-overlay-view"); },2000) },4000); }  }  }); }
+
+const call_container_watch = new IntersectionObserver(call_container_view);
+call_container_watch.observe(call_container);
