@@ -3,16 +3,6 @@
 
 //  Codigo efecto para problema-container 
 
-const problema_container = document.querySelector(".problema-container");
-
-const problema_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ problema_container.classList.add("problema-container-view"); }
-                                                              else problema_container.classList.remove("problema-container-view");   }); }
-
-const problema_watch = new IntersectionObserver(problema_view);
-problema_watch.observe(problema_container);
-
-
-
 //  Codigo efecto para problema2-container 
 
 const problema2_container = document.querySelector(".problema2-container");
@@ -46,10 +36,8 @@ problema3_watch.observe(problema3_container);
 
 const curso_tittle = document.querySelector(".curso-tittle");
 
-const curso_tittle_view = (entradas)=>{ entradas.forEach(entrada=>{ if(entrada.isIntersecting) { curso_tittle.style.opacity = "1";
-	                                                                                             curso_tittle.style.transform = `scale(1)`; }
-                                                                    else { curso_tittle.style.opacity = "0";
-                                                                           curso_tittle.style.transform = `scale(.5)`; }  });  }
+const curso_tittle_view = (entradas)=>{ entradas.forEach(entrada=>{ if(entrada.isIntersecting) { curso_tittle.classList.add("curso-tittle-view"); }
+                                                                    else { curso_tittle.classList.remove("curso-tittle-view"); }  });  }
 
 const curso_tittle_watch = new IntersectionObserver(curso_tittle_view);
 curso_tittle_watch.observe(curso_tittle);

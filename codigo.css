@@ -34,7 +34,7 @@ body { background-color: #040608; }
                   background-repeat: no-repeat;
 
                   overflow: hidden; }
-                  
+
                   .main-content { width: 50%;
                                   padding: 20px;
                                   padding-top: 60px;
@@ -272,59 +272,6 @@ body { background-color: #040608; }
                                        .pain-img { border-radius: 0px; } }
 
 
-
-
-/* Codigo seccion problema*/
-
-.problema-container { width: 100%;
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: center;
-                      align-items: center;
-                      padding: 40px 20px;
-                      font-size: 20px;
-                      font-family: "Poppins",sans-serif;
-                      opacity: 0;
-                      transform: scale(.8);
-                      transition: opacity .5s ease-in-out, transform .4s ease-in-out;
-                      transition-delay: .2s; }
-
-.problema-container-view { opacity: 1;
-                           transform: scale(1); }
-
-
-                      .problema-container h4 { font-size: 1.5em;
-                                               font-family: "Righteous","Poppins",sans-serif;
-                                               font-weight: bold;
-                                               margin-bottom: 20px;
-                                               text-align: center;
-                                               color: white; }
-
-
-                      .problema-container p { font-size: .8em;
-                                              color: white;
-                                              font-weight: normal;
-                                              margin-bottom: 20px;
-                                              text-align: center;
-                                              width: 50%; }
-
-                       .problema-logo { width: 30px;
-                                        margin-bottom: 20px; }
-                      
-                       .problema-flecha { animation-name: flecha_abajo;
-                                          animation-duration: .5s;
-                                          animation-iteration-count: infinite;
-                                          animation-fill-mode: forwards;
-                                          animation-direction: alternate-reverse;
-                                          animation-timing-function: ease-in-out; }
-
-@media screen and (max-width: 880px) { .problema-container p { width: 70%; } }
-@media screen and (max-width: 700px) { .problema-container p { width: 90%; } }
-@media screen and (max-width: 550px) { .problema-container p { width: 100%; }
-                                       .problema-container { padding: 40px 15px; } }
-
-
-
 /* Codigo seccion problema 2*/
 
 .problema2-container { width: 100%;
@@ -349,7 +296,8 @@ body { background-color: #040608; }
                                                 font-weight: bold;
                                                 margin-bottom: 20px;
                                                 text-align: center;
-                                                color: white; }
+                                                color: white;
+                                                width: 50%; }
 
 
                       .problema2-container p { font-size: .8em;
@@ -369,9 +317,9 @@ body { background-color: #040608; }
                                            animation-direction: alternate-reverse;
                                            animation-timing-function: ease-in-out; }
 
-@media screen and (max-width: 880px) { .problema2-container p { width: 70%; } }
-@media screen and (max-width: 700px) { .problema2-container p { width: 90%; } }
-@media screen and (max-width: 550px) { .problema2-container p { width: 100%; }
+@media screen and (max-width: 880px) { .problema2-container p,.problema2-container h4 { width: 70%; } }
+@media screen and (max-width: 700px) { .problema2-container p,.problema2-container h4 { width: 90%; } }
+@media screen and (max-width: 550px) { .problema2-container p,.problema2-container h4 { width: 100%; }
                                        .problema2-container { padding: 40px 15px; } }
 
 
@@ -393,12 +341,12 @@ body { background-color: #040608; }
                                           color: white;
                                           text-align: center;
                                           margin-bottom: 20px;
-                                          transform: scale(.5);
                                           opacity: 0;
-                                          transition: transform .8s ease-in-out, opacity .7s ease-in-out; }
+                                          transform: translateY(70%);
+                                          transition: transform .6s ease-in-out ,opacity .7s ease-in-out; }
 
-                                          .curso-titte-view { opacity: 1;
-                                                              transform: scale(1); }
+                                          .curso-tittle-view { opacity: 1;
+                                                               transform: translateY(0); }
 
                           .curso-tittle-container img { animation-name: flecha_abajo;
                                                         animation-duration: .5s;
