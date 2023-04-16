@@ -6,12 +6,38 @@
 //  Codigo efecto para problema2-container 
 
 const problema2_container = document.querySelector(".problema2-container");
+const problema2_tittle = document.querySelector(".problema2-tittle");
+const problema2_parrafo = document.querySelector(".problema2-parrafo");
+const problema2_logo = document.querySelector(".problema2-logo")
 
-const problema2_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ problema2_container.classList.add("problema2-container-view"); }
-                                                              else problema2_container.classList.remove("problema2-container-view");   }); }
+const problema2_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ problema2_tittle.classList.add("problema2-efect-view");
+                                                                                          problema2_parrafo.classList.add("problema2-efect-view");
+                                                                                          problema2_logo.classList.add("problema2-efect-view"); }
+
+                                                              else { problema2_tittle.classList.remove("problema2-efect-view");
+                                                                     problema2_parrafo.classList.remove("problema2-efect-view");
+                                                                     problema2_logo.classList.remove("problema2-efect-view"); }   }); }
 
 const problema2_watch = new IntersectionObserver(problema2_view);
 problema2_watch.observe(problema2_container);
+
+
+//  codigo seccion realidad
+const realidad_container = document.querySelector(".realidad-container");
+const realidad_tittle = document.querySelector(".realidad-tittle");
+const realidad_parrafo = document.querySelector(".realidad-parrafo");
+
+
+const realidad_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ realidad_tittle.classList.add("realidad-efect-view");
+                                                                                         realidad_parrafo.classList.add("realidad-efect-view"); }
+
+                                                              else { realidad_tittle.classList.remove("realidad-efect-view");
+                                                                     realidad_parrafo.classList.remove("realidad-efect-view"); }   }); }
+
+const realidad_watch = new IntersectionObserver(realidad_view);
+realidad_watch.observe(realidad_container);
+
+
 
 
 //  Codigo efecto para problema3-container 
