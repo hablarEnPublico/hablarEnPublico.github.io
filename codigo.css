@@ -26,9 +26,9 @@ body { background-color: #040608; }
 
                   background: #141E30;
                   background: -webkit-linear-gradient(to top, #243B55, #141E30);
-                  background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/main_background.webp);
+                  background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/problema_fondo.webp);
 
-                  background-position: top;
+                  background-position: bottom;
                   background-size: cover;
                   background-attachment: scroll;
                   background-repeat: no-repeat;
@@ -272,125 +272,125 @@ body { background-color: #040608; }
                                        .pain-img { border-radius: 0px; } }
 
 
+/* Codigo seccion problema 2*/
 
-/* Codigo seccion problema*/
+.problema2-container { width: 100%;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 40px 20px;
+                       font-size: 20px;
+                       font-family: "Poppins",sans-serif; }
 
-.problema-container { width: 100%;
-                      height: 60vh;
-                      min-height: 700px;
-                      padding: 20px 15px;
+                       .problema2-tittle { font-size: 1.5em;
+                                           font-family: "Righteous","Poppins",sans-serif;
+                                           font-weight: bold;
+                                           margin-bottom: 20px;
+                                           text-align: center;
+                                           color: white;
+                                           width: 50%;
 
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
+                                           opacity: 0;
+                                           transform: translateY(-70%);
+                                           transition: transform .4s ease-in-out, opacity .5s ease-in-out; }
 
-                      background: #141E30;
-                      background: -webkit-linear-gradient(to top, #243B55, #141E30);
-                      background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/problema_fondo.webp");
-                      background-position:center;
-                      background-attachment: scroll;
-                      background-repeat: no-repeat;
-                      background-size: cover; }
+                       .problema2-parrafo { font-size: .8em;
+                                            color: white;
+                                            font-weight: normal;
+                                            margin-bottom: 20px;
+                                            text-align: center;
+                                            width: 50%;
 
-                      .problema-content { width: 50%;
-                                          border-radius: 15px;
-                                          padding: 20px;
-                                          border: 1px solid #121;
-                                          background-color: #0009;
+                                            opacity: 0;
+                                            transform: translateY(-70%);
+                                            transition: transform .4s ease-in-out, opacity .5s ease-in-out; }
 
-                                          display: flex;
-                                          flex-direction: column;
-                                          justify-content: center;
-                                          align-items: center;
-                                          font-size: 20px;
-                                          font-family: "Poppins",sans-serif; }
-
-                                          .problema-content h4 { font-size: 1.4em;
-                                                                 color: white;
-                                                                 font-family: "Righteous","Poppins",sans-serif;
-                                                                 font-weight: bold;
-                                                                 margin-bottom: 20px;
-                                                                 text-align: center; }
-
-                                          .problema-content p { font-size: .8em;
-                                                                color: white;
-                                                                font-weight: normal;
-                                                                text-align: center;
-                                                                margin-bottom: 10px; }
-
-                                          .problema-content img { width: 25px;
-                                                                  filter: drop-shadow(0 0 5px yellow); }
+                       .problema2-logo { width: 30px;
+                                         margin-bottom: 20px;
+                                         opacity: 0;
+                                         transform: translateY(-70%);
+                                         transition: transform .4s ease-in-out, opacity .5s ease-in-out; }
+                       
+                       .problema2-efect-view { opacity: 1;
+                                               transform: translateY(0); }
 
 
-/* Codigo seccion REALIDAD*/
+@media screen and (max-width: 880px) { .problema2-container p,.problema2-container h4 { width: 70%; } }
+@media screen and (max-width: 700px) { .problema2-container p,.problema2-container h4 { width: 90%; } }
+@media screen and (max-width: 550px) { .problema2-container p,.problema2-container h4 { width: 100%; }
+                                       .problema2-container { padding: 40px 15px; } }
+
+
+
+
+/* Codigo seccion realidad*/
 
 .realidad-container { width: 100%;
-                      height: 60vh;
-                      min-height: 500px;
-                      padding: 20px 15px;
-                      margin-bottom: 60px;
-
+                     
                       display: flex;
+                      flex-direction: column;
                       justify-content: center;
                       align-items: center;
+                      padding: 40px 20px;
+                      margin-bottom: 20px;
 
-                      background: #141E30;
-                      background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
-                      background: linear-gradient(to bottom, #000, #141E3099), url("multimedia/imagenes/realidad_fondo.webp");
-                      background-position:center;
-                      background-attachment: scroll;
-                      background-repeat: no-repeat;
-                      background-size: cover; }
+                      font-size: 20px;
+                      font-family: "Poppins",sans-serif; }
 
-                      .realidad-content { width: 50%;
-                                          border-radius: 15px;
-                                          padding: 20px;
-                                          border: 1px solid #121;
-                                          background-color: #0009;
+                      .realidad-tittle { font-size: 1.5em;
+                                         color: white;
+                                         font-weight: bold;
+                                         font-family: "Righteous","Poppins",sans-serif;
+                                         margin-bottom: 20px;
+                                         text-align: center;
+                                         width: 50%;
+                                         transform: translateY(50%);
+                                         opacity: 0;
+                                         transition: opacity .5s ease-in-out, transform .4s ease-in-out;
+                                         transition-delay: .1s; }
 
-                                          display: flex;
-                                          flex-direction: column;
-                                          justify-content: center;
-                                          align-items: center;
-                                          font-size: 20px;
-                                          font-family: "Poppins",sans-serif; }
+                      .realidad-parrafo { font-size: .8em;
+                                          color: white;
+                                          text-align: center;
+                                          width: 50%;
+                                          font-weight: normal;
+                                          transform: translateY(50%);
+                                          opacity: 0;
+                                          transition: opacity .5s ease-in-out, transform .4s ease-in-out;
+                                          transition-delay: .1s; }
 
-                                          .realidad-content h4 { font-size: 1.4em;
-                                                                 color: white;
-                                                                 font-family: "Righteous","Poppins",sans-serif;
-                                                                 font-weight: bold;
-                                                                 margin-bottom: 20px;
-                                                                 text-align: center; }
+                      .realidad-efect-view { transform: translateY(0);
+                                             opacity: 1; }
 
-                                          .realidad-content p { font-size: .8em;
-                                                                color: white;
-                                                                font-weight: normal;
-                                                                text-align: center;
-                                                                margin-bottom: 10px; }
-
-                                          .realidad-content img { width: 25px;
-                                                                  filter: drop-shadow(0 0 5px yellow); }
-
-
-@media screen and (max-width: 1080px) { .problema-content,.realidad-content { width: 70%; } }
-@media screen and (max-width: 800px) { .problema-content,.realidad-content { width: 90%; } }
-@media screen and (max-width: 570px) { .problema-content,.realidad-content { width: 100%; }
-                                       .problema-container { background-position: left; } }
-
-
+@media screen and (max-width: 880px) { .realidad-container p,.realidad-container h4 { width: 70%; } }
+@media screen and (max-width: 700px) { .realidad-container p,.realidad-container h4 { width: 90%; } }
+@media screen and (max-width: 550px) { .realidad-container p,.realidad-container h4 { width: 100%; }
+                                       .realidad-container { padding: 40px 15px; } }
 
 
 
 /* codigo seccion curso*/
 
 .curso-tittle-container { width: 100%;
+                          height: 50vh;
+                          min-height: 400px;
                           display: flex;
                           flex-direction: column;
                           justify-content: center;
                           align-items: center;
                           font-size: 20px;
                           font-family: "Righteous","Poppins",sans-serif;
-                          padding: 0 20px; }
+                          padding: 0 20px;
+
+                          background: #141E30;
+                          background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                          background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/realidad_fondo.webp");
+
+                          background-position: bottom;
+                          background-size: cover;
+                          background-attachment: scroll;
+                          background-repeat: no-repeat; }
 
                           .curso-tittle { font-size: 1.5em;
                                           color: white;
