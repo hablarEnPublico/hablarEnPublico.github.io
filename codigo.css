@@ -24,8 +24,7 @@ body { background-color: #040608; }
                   justify-content: center;
                   align-items: center;
 
-                  background: #141E30;
-                  background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                  background: #141E3099;
                   background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/problema_fondo.webp);
 
                   background-position: bottom;
