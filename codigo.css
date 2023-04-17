@@ -629,57 +629,52 @@ body { background-color: #040608; }
                       flex-direction: column;
                       justify-content: center;
                       align-items: center;
-                      padding: 20px; }
+                      padding: 20px 15px;
+                      font-size: 20px;
+                      padding-top: 40px;
+                      background-color: white; }
 
-                      .obtendra-logo { width: 30px;
-                                       margin-bottom: 20px;
-                                       margin-top: 20px; }
+                      .obtendra-tittle { font-size: 1.3em;
+                                         font-weight: bold;
+                                         text-align: center;
+                                         margin-bottom: 20px;
+                                         color: #123;
+                                         font-family: "Righteous","Poppins",sans-serif; }
 
-                      .obtendra-content { width: 100%;
-                                          display: flex;
-                                          flex-direction: column;
-                                          justify-content: center;
-                                          align-items: center;
-                                          margin-bottom: 20px;
-                                          font-size: 20px;
-                                          font-family: "Poppins",sans-serif; }
+                      .obtendra-tarjetas-container { width: 60%;
+                                                     display: grid;
+                                                     grid-template-columns: repeat(3,1fr);
+                                                     grid-gap: 10px; }
 
-                                          .obtendra-content h4 { font-size: 1.2em;
-                                                                 font-family: "Righteous","Poppins",sans-serif;
-                                                                 color: white;
-                                                                 margin-bottom: 20px;
-                                                                 text-align: center; }
+                                                     .obtendra-tarjetas { width: 100%;
+                                                                          display: flex;
+                                                                          flex-direction: column;
+                                                                          justify-content: center;
+                                                                          align-items: center;
+                                                                          
+                                                                          font-size: 20px;
+                                                                          font-family: "Poppins",sans-serif;
+                                                                          border-radius: 20px;
+                                                                          background-color: white;
+                                                                          padding: 20px;
+                                                                          border: 1px solid #ccc; }
 
+                                                                          .obtendra-tarjetas img { width: 50%; }
 
-                                          .obtendra-contenido { width: 50%;
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                                font-size: 20px;
-                                                                font-family: "Poppins",sans-serif; }
+                                                                          .obtendra-tarjetas span { font-size: .8em;
+                                                                                                    color: #123;
+                                                                                                    font-weight: bold;
+                                                                                                    margin-top: 5px;
+                                                                                                    text-align: center; }
 
-                                                                .obtendra-contenido span { font-size: .8em;
-                                                                                           color: white;
-                                                                                           text-align: center;
-                                                                                           padding: 0px 5px; }
+@media screen and (max-width: 1090px) { .obtendra-tarjetas-container { width: 80%; } }
+@media screen and (max-width: 960px) { .obtendra-tarjetas-container { width: 100%; } }
+@media screen and (max-width: 780px) { .obtendra-tarjetas-container { grid-template-columns: repeat(1,1fr);
+                                                                      grid-template-rows: repeat(3,1fr);
+                                                                      width: 60%; } }
 
-                       .obtendra-img { animation-name: flecha_abajo;
-                                       animation-duration: .5s;
-                                       animation-iteration-count: infinite;
-                                       animation-fill-mode: forwards;
-                                       animation-direction: alternate-reverse;
-                                       animation-timing-function: ease-in-out; }
-
-@media screen and (max-width: 960px) { .obtendra-contenido { width: 70%; } }
-
-@media screen and (max-width: 570px) { .obtendra-contenido { width: 100%; } }
-
-@media screen and (max-width: 450px) { .obtendra-contenido span { border: none;
-                                                                  font-size: .6; } }
-
-
-
-
+@media screen and (max-width: 550px) { .obtendra-tarjetas-container { width: 80%; } }
+@media screen and (max-width: 420px) { .obtendra-tarjetas-container { width: 100%; } }
 
 
 /* Codigo seccion beneficios*/
