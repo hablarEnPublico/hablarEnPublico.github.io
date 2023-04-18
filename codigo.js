@@ -120,3 +120,35 @@ const call_container_view = (entryes)=>{ entryes.forEach(entrada=>{ if(entrada.i
 
 const call_container_watch = new IntersectionObserver(call_container_view);
 call_container_watch.observe(call_container);
+
+
+
+
+
+
+//  Codigo seccion cronometro
+
+function actualizarCronometro() {
+  // Obtener la hora actual
+  let ahora = new Date();
+
+  // Establecer el final del día
+  let finalDelDia = new Date();
+  finalDelDia.setHours(23);
+  finalDelDia.setMinutes(59);
+  finalDelDia.setSeconds(59);
+
+  // Calcular la diferencia en segundos entre la hora actual y el final del día
+  let diferenciaSegundos = Math.floor((finalDelDia - ahora) / 1000);
+
+  // Calcular las horas, minutos y segundos restantes
+  let horasRestantes = Math.floor(diferenciaSegundos / 3600);
+  let minutosRestantes = Math.floor((diferenciaSegundos % 3600) / 60);
+  let segundosRestantes = diferenciaSegundos % 60;
+
+  // Actualizar las etiquetas "span"
+  document.getElementById("hora").textContent = horasRestantes.toString().padStart(2, '0');
+  document.getElementById("minutos").textContent = minutosRestantes.toString().padStart(2, '0');
+  document.getElementById("segundos").textContent = segundosRestantes.toString().padStart(2, '0');
+}
+setInterval(actualizarCronometro, 1000);
