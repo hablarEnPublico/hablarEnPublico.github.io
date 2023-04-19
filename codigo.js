@@ -41,13 +41,17 @@ realidad_watch.observe(realidad_container);
 
 //  Codigo efecto para problema3-container 
 
-const problema3_container = document.querySelector(".problema3-container");
+const problema3_tittle = document.querySelector(".problema3-tittle");
+const problema3_parrafo = document.querySelector(".problema3-parrafo");
 
-const problema3_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ problema3_container.classList.add("problema3-container-view"); }
-                                                              else problema3_container.classList.remove("problema3-container-view");   }); }
+const problema3_view =(entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting){ problema3_tittle.classList.add("problema3-efect-view");
+                                                                                          problema3_parrafo.classList.add("problema3-efect-view"); }
+
+                                                              else {  problema3_tittle.classList.remove("problema3-efect-view");
+                                                                      problema3_parrafo.classList.remove("problema3-efect-view"); }  }); }
 
 const problema3_watch = new IntersectionObserver(problema3_view);
-problema3_watch.observe(problema3_container);
+problema3_watch.observe(problema3_tittle);
 
 
 

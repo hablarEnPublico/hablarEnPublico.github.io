@@ -795,29 +795,31 @@ body { background-color: #040608; }
                        align-items: center;
                        padding: 20px;
                        font-size: 20px;
-                       font-family: "Poppins",sans-serif;
-                       opacity: 0;
-                       transform: scale(.8);
-                       transition: opacity .5s ease-in-out, transform .4s ease-in-out; }
+                       font-family: "Poppins",sans-serif; }
 
-.problema3-container-view { opacity: 1;
-                            transform: scale(1); }
-
-
-                      .problema3-container h4 { font-size: 1.5em;
-                                                font-family: "Righteous","Poppins",sans-serif;
-                                                font-weight: bold;
-                                                margin-bottom: 20px;
-                                                text-align: center;
-                                                color: white; }
+                      .problema3-tittle { font-size: 1.5em;
+                                          font-family: "Righteous","Poppins",sans-serif;
+                                          font-weight: bold;
+                                          margin-bottom: 20px;
+                                          text-align: center;
+                                          color: white;
+                                          opacity: 0;
+                                          transform: translateY(50%);
+                                          transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
 
 
-                      .problema3-container p { font-size: .8em;
-                                               color: white;
-                                               font-weight: normal;
-                                               margin-bottom: 20px;
-                                               text-align: center;
-                                               width: 50%; }
+                      .problema3-parrafo { font-size: .8em;
+                                           color: white;
+                                           font-weight: normal;
+                                           margin-bottom: 20px;
+                                           text-align: center;
+                                           width: 50%;
+                                           opacity: 0;
+                                           transform: translateY(50%);
+                                           transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+
+                      .problema3-efect-view { opacity: 1;
+                                              transform: translateY(0); }
                        
                        .problema3-flecha { animation-name: flecha_abajo;
                                            animation-duration: .5s;
@@ -833,36 +835,6 @@ body { background-color: #040608; }
 
 
 
-  /* Codigo seccion solucion*/
-
-  .solucion-container { width: 100%;
-                        padding: 20px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding-bottom: 60px;
-
-                        font-size: 20px;
-                        font-family: "Righteous","Poppins",sans-serif; }
-
-                        .solucion-container h4 { font-size: 1.5em;
-                                                 font-weight: bold;
-                                                 text-align: center;
-                                                 color: white;
-                                                 margin-bottom: 20px; }
-
-                        .solucion-container  p { font-size: .8em;
-                                                 color: white;
-                                                 font-weight: normal;
-                                                 font-family: "Poppins",sans-serif;
-                                                 text-align: center;
-                                                 width: 50%; }
-
-@media screen and (max-width: 880px) { .solucion-container p { width: 70%; } }
-@media screen and (max-width: 700px) { .solucion-container p { width: 90%; } }
-@media screen and (max-width: 550px) { .solucion-container p { width: 100%; }
-                                       .solucion-container { padding: 40px 15px; } }
 
 /* Codigo seccion oferta*/
 
@@ -1070,7 +1042,8 @@ body { background-color: #040608; }
 @media screen and (max-width: 860px) { .social-content { width: 80%; } }
 @media screen and (max-width: 640px) { .social-content { width: 100%; } }
 @media screen and (max-width: 540px) { .social-content iframe { height: 400px;
-                                                                margin-bottom: 0px; } }
+                                                                margin-bottom: 0px; }
+                                       .social-container { padding: 0px; } }
 
 
 
