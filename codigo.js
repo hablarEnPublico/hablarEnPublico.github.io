@@ -128,13 +128,18 @@ call_container_watch.observe(call_container);
 
 //  Codigo seccion cronometro
 
-function actualizarCronometro() {
+const cronometro_hora = document.getElementById("hora");
+const cronometro_minutos = document.getElementById("minutos");
+const cronometro_segundos = document.getElementById("segundos");
+let intervalo;
+
+const actualizarCronometro =()=> {
   // Obtener la hora actual
   let ahora = new Date();
 
   // Establecer el final del día
   let finalDelDia = new Date();
-  finalDelDia.setHours(23);
+  finalDelDia.setHours(24);
   finalDelDia.setMinutes(59);
   finalDelDia.setSeconds(59);
 
@@ -147,8 +152,27 @@ function actualizarCronometro() {
   let segundosRestantes = diferenciaSegundos % 60;
 
   // Actualizar las etiquetas "span"
-  document.getElementById("hora").textContent = horasRestantes.toString().padStart(2, '0');
-  document.getElementById("minutos").textContent = minutosRestantes.toString().padStart(2, '0');
-  document.getElementById("segundos").textContent = segundosRestantes.toString().padStart(2, '0');
+  cronometro_hora.textContent = horasRestantes.toString().padStart(2, '0');
+  cronometro_minutos.textContent = minutosRestantes.toString().padStart(2, '0');
+  cronometro_segundos.textContent = segundosRestantes.toString().padStart(2, '0');
+
+  // Verificar si el cronómetro ha alcanzado cero
+  if (diferenciaSegundos <= 0) {
+    // Detener el intervalo de actualización
+    clearInterval(intervalo);
+
+    // Guardar un valor en el localStorage
+    localStorage.setItem('cronometroFinalizado', 'true');
+  }
 }
-setInterval(actualizarCronometro, 1000);
+
+// Verificar si el cronómetro ya ha finalizado hoy
+if (localStorage.getItem('cronometroFinalizado') === 'true') { cronometro_hora.style.border = "2px solid #222";
+                                                               cronometro_minutos.style.border = "2px solid #222";
+                                                               cronometro_segundos.style.border = "2px solid #222";
+
+                                                               cronometro_hora.textContent = "00";
+                                                               cronometro_minutos.textContent = "00";
+                                                               cronometro_segundos.textContent ="00"; }
+else { actualizarCronometro();
+       intervalo = setInterval(actualizarCronometro, 1000); }
