@@ -113,7 +113,7 @@ const call_container = document.querySelector(".call-container");
 const call_content = document.querySelector(".call-content");
 const call_overlay = document.querySelector(".call-overlay");
 
-call_container.addEventListener("click", ()=>{ window.open("www.google.com") });
+call_container.addEventListener("click", ()=>{ window.open("https://go.hotmart.com/K81069854S?ap=8c44"); });
 let overlay_efect = 0; 
 
 const call_container_view = (entryes)=>{ entryes.forEach(entrada=>{ if(entrada.isIntersecting) {  overlay_efect++;
