@@ -1036,8 +1036,7 @@ body { background-color: #040608; }
 
                                       .social-content iframe { width: 100%;
                                                                height: 300px;
-                                                               border: none;
-                                                               margin-bottom: 10px; }
+                                                               border: none; }
 
 @media screen and (max-width: 860px) { .social-content { width: 80%; } }
 @media screen and (max-width: 640px) { .social-content { width: 100%; } }
@@ -1047,5 +1046,69 @@ body { background-color: #040608; }
 
 
 
+/* Codigo seccion garantia*/
+
+.garantia-container { width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding: 20px 15px; }
+
+                      .garantia-content { width: 60%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          border-radius: 20px;
+                                          border: 1px solid #123;
+                                          padding: 20px; }
+
+                                          .garantia-content img { width: 40%; }
+
+                                          .garantia-contenido { width: max-content;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                justify-content: flex-start;
+                                                                align-items: flex-start;
+                                                                font-size: 20px;
+                                                                font-family: "Poppins",sans-serif; }
+
+                                                                .garantia-contenido h4 { font-size: 1.5em; 
+                                                                                         color: white;
+                                                                                         margin-bottom: 20px;
+                                                                                         text-align: left;
+                                                                                         font-family: "Righteous","Poppins",sans-serif; }
+
+                                                                .garantia-contenido p { font-size: .8em;
+                                                                                        color: white;
+                                                                                        text-align: left;
+                                                                                        margin-bottom: 20px; }
+
+                                                                .garantia-boton-devolucion { width: max-content;
+                                                                                             padding: 4px 10px;
+                                                                                             border-radius: 15px;
+                                                                                             background-color: white;
+                                                                                             color: #123;
+                                                                                             font-size: .8em;
+                                                                                             font-weight: bold;
+                                                                                             text-align: left;
+                                                                                             cursor: pointer;
+                                                                                             transition: background-color .2s ease-in-out;
+                                                                                             border: 1px solid white;  }
+
+                                                                                             .garantia-boton-devolucion:hover { background-color: transparent;
+                                                                                                                                color: white; }
 
 
+
+@media screen and (max-width: 1310px) { .garantia-content { width: 70%; } }
+@media screen and (max-width: 1100px) { .garantia-content { width: 80%; } }
+@media screen and (max-width: 980px) { .garantia-content { width: 100%; } }
+@media screen and (max-width: 665px) { .garantia-content { flex-direction: column; }
+                                       .garantia-content img { width: 60%; }
+                                       .garantia-contenido { width:60%;
+                                                             justify-content: center;
+                                                             align-items: center; }
+                                                           .garantia-contenido h4,p,span { text-align: center !important; } }
+
+@media screen and (max-width: 520px) { .garantia-content img, .garantia-contenido { width: 80%; } }
+@media screen and (max-width: 500px) { .garantia-content img, .garantia-contenido { width: 100%; } }

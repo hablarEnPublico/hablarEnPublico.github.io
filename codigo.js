@@ -180,3 +180,12 @@ if (localStorage.getItem('cronometroFinalizado') === 'true') { cronometro_hora.s
                                                                cronometro_segundos.textContent ="00"; }
 else { actualizarCronometro();
        intervalo = setInterval(actualizarCronometro, 1000); }
+
+
+
+
+//  Codigo seccion devolucion
+
+const garantia_devolucion = document.querySelector(".garantia-boton-devolucion");
+
+garantia_devolucion.addEventListener("click", ()=>{ window.open("https://refund.hotmart.com/"); });
