@@ -269,7 +269,7 @@ body { background-color: #040608; }
 
                                            opacity: 0;
                                            transform: translateY(-70%);
-                                           transition: transform .4s ease-in-out, opacity .5s ease-in-out; }
+                                           transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
 
                        .problema2-parrafo { font-size: .8em;
                                             color: white;
@@ -280,7 +280,7 @@ body { background-color: #040608; }
 
                                             opacity: 0;
                                             transform: translateY(-70%);
-                                            transition: transform .4s ease-in-out, opacity .5s ease-in-out; }
+                                            transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
 
                        .problema2-logo { width: 30px;
                                          margin-bottom: 20px;
@@ -323,8 +323,7 @@ body { background-color: #040608; }
                                          width: 50%;
                                          transform: translateY(50%);
                                          opacity: 0;
-                                         transition: opacity .5s ease-in-out, transform .4s ease-in-out;
-                                         transition-delay: .1s; }
+                                         transition: opacity 1s ease-in-out, transform 1s ease-in-out; }
 
                       .realidad-parrafo { font-size: .8em;
                                           color: white;
@@ -333,8 +332,7 @@ body { background-color: #040608; }
                                           font-weight: normal;
                                           transform: translateY(50%);
                                           opacity: 0;
-                                          transition: opacity .5s ease-in-out, transform .4s ease-in-out;
-                                          transition-delay: .1s; }
+                                          transition: opacity 1s ease-in-out, transform 1s ease-in-out; }
 
                       .realidad-efect-view { transform: translateY(0);
                                              opacity: 1; }
@@ -374,7 +372,7 @@ body { background-color: #040608; }
                                           margin-bottom: 20px;
                                           opacity: 0;
                                           transform: translateY(70%);
-                                          transition: transform .6s ease-in-out ,opacity .7s ease-in-out; }
+                                          transition: transform 1s ease-in-out ,opacity 1s ease-in-out; }
 
                                           .curso-tittle-view { opacity: 1;
                                                                transform: translateY(0); }
@@ -1019,33 +1017,6 @@ body { background-color: #040608; }
 @media screen and (max-width: 350px) { .call-content { width: 90%; } }
 
 
-
-/* Codigo seccion prueba social*/
-
-.social-container { width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 20px 0; }
-
-                    .social-content { width: 60%;
-                                      display: flex;
-                                      flex-direction: column;
-                                      justify-content: center;
-                                      align-items: center; }
-
-                                      .social-content iframe { width: 100%;
-                                                               height: 300px;
-                                                               border: none; }
-
-@media screen and (max-width: 860px) { .social-content { width: 80%; } }
-@media screen and (max-width: 640px) { .social-content { width: 100%; } }
-@media screen and (max-width: 540px) { .social-content iframe { height: 400px;
-                                                                margin-bottom: 0px; }
-                                       .social-container { padding: 0px; } }
-
-
-
 /* Codigo seccion garantia*/
 
 .garantia-container { width: 100%;
@@ -1108,7 +1079,67 @@ body { background-color: #040608; }
                                        .garantia-contenido { width:60%;
                                                              justify-content: center;
                                                              align-items: center; }
-                                                           .garantia-contenido h4,p,span { text-align: center !important; } }
+                                                           .garantia-contenido h4,
+                                                           .garantia-contenido p,
+                                                           .garantia-boton-devolucion { text-align: center; } }
 
 @media screen and (max-width: 520px) { .garantia-content img, .garantia-contenido { width: 80%; } }
 @media screen and (max-width: 500px) { .garantia-content img, .garantia-contenido { width: 100%; } }
+
+
+
+/* Codigo seccion prueba social*/
+
+.social-container { width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 0; }
+
+                    .social-content { width: 60%;
+                                      display: flex;
+                                      flex-direction: column;
+                                      justify-content: center;
+                                      align-items: center; }
+
+                                      .social-content iframe { width: 100%;
+                                                               height: 300px;
+                                                               border: none;
+                                                               margin-bottom: 10px; }
+
+@media screen and (max-width: 860px) { .social-content { width: 80%; } }
+@media screen and (max-width: 640px) { .social-content { width: 100%; } }
+@media screen and (max-width: 540px) { .social-content iframe { margin-bottom: 0px; }
+                                       .social-container { padding: 0px; } }
+
+
+
+/* Codigo seccion final*/
+
+.final-container { width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content:space-around;
+                   align-items: center;
+                   padding: 20px;
+                   height: 80vh;
+
+                   background: #141E30;
+                   background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                   background: linear-gradient(to top, rgba(0,0,0), #0009), url("multimedia/imagenes/realidad_fondo.webp");
+
+                   background-position: bottom;
+                   background-size: cover;
+                   background-attachment: scroll;
+                   background-repeat: no-repeat;
+                   font-size: 20px;  }
+
+                   .final-container h4 { font-size: 1.5em;
+                                         color: white;
+                                         font-family: "Righteous","Poppins",sans-serif;
+                                         text-align: center; }
+
+                   .final-container p { font-size: .8em;
+                                        font-family: "Poppins",sans-serif;
+                                        color: #ccc;
+                                        text-align: center; }
