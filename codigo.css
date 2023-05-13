@@ -33,6 +33,85 @@ ul { list-style-type: none; }
 
 
 
+/* Codigo seccion modal menu responsive*/
+
+.modal-container { width: 100%;
+                   height: 100vh;
+
+                   background-color: #0001;
+                   display: none;
+                   justify-content: center;
+                   align-items: center;
+                   position: fixed;
+                   top: 0;
+                   left: 0;
+                   z-index: 1000;
+                   transition: background-color .2s ease-in-out; }
+
+.modal-container-open { display: flex;
+                        background-color: #0008  }
+
+                   .modal-content { width: 40%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 15px;
+                                    background-color: white;
+                                    padding: 20px;
+                                    transform: scale(.8);
+                                    opacity: 0;
+                                    transition: transform .2s ease-in-out, opacity .2s ease-in-out; }
+
+                                    .modal-content-open { opacity: 1;
+                                                          transform: scale(1);  }
+
+                                    .modal-cerrar-container { width: 100%;
+                                                              display: flex;
+                                                              justify-content: space-between;
+                                                              align-items: center;
+                                                              font-size: 20px;
+                                                              margin-bottom: 20px; }
+
+                                                              .modal-cerrar-container span { font-size: 1em;
+                                                                                             color: #0462DB;
+                                                                                             text-align: center;
+                                                                                             font-weight: bold; }
+
+                                                              .modal-cerrar { cursor: pointer; }
+
+                                    .modal-menu-container { width: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                                            font-size: 20px; }
+
+                                                            .modal-menu-opciones { width: 100%;
+                                                                                   display: flex;
+                                                                                   flex-direction: column;
+                                                                                   justify-content: center;
+                                                                                   align-items: center;
+                                                                                   font-size: 20px;
+                                                                                   font-weight: bold; }
+
+                                                                                   .modal-menu-opciones li { margin-bottom: 25px;
+                                                                                                             cursor: pointer;
+                                                                                                             color: #222;
+                                                                                                             transition: color .2s ease-in-out;
+                                                                                                             font-size: .7em; }
+
+                                                                                                             .modal-menu-opciones li:hover { color: #0462DB; }
+
+
+@media screen and (min-width: 800px) { .modal-container { display: none; } }
+@media screen and (max-width: 650px) { .modal-content { width: 60%; } }
+@media screen and (max-width: 500px) { .modal-content { width: 70%; } }
+@media screen and (max-width: 450px) { .modal-content { width: 80%; } }
+@media screen and (max-width: 400px) { .modal-content { width: 90%; } }
+
+
+
 /* Codigo seccion barra de navegacion*/
 .nav-container { width: 100%;
 	             padding: 40px 60px;
@@ -137,27 +216,36 @@ ul { list-style-type: none; }
                                                                     .seccion1-content-redes img { padding-right: 10px;
                                                                                                   cursor: pointer; }
 
-                      .seccion1-img-container { width: 50%;
-                                                height: 100%;
-                                                clip-path: circle(40.4% at 50% 50%);
+                      .seccion1-img { width: 50%;
+                                      filter: drop-shadow(0 40px 20px #0462DB);
+                                      transform: translateY(-20px);
 
-                                                background-image: url(multimedia/imagenes/perfil.webp);
-                                                background-attachment: scroll;
-                                                background-position: top;
-                                                background-repeat: no-repeat;
-                                                background-size: cover; }
+                                      animation-name: move;
+                                      animation-duration: 1.5s;
+                                      animation-iteration-count: infinite;
+                                      animation-timing-function: linear;
+                                      animation-direction: alternate-reverse; }
+
+
 
 @keyframes escribir { 0% { width: 100%; }
                       100% { width: 0%; } }
 
-@media screen and (max-width: 700px) { .seccion1-container { flex-direction: column;
-                                                             height: 100vh; }
-                                       .seccion1-content,
-                                       .seccion1-img-container { width: 100%;
-                                                                 padding: 15px; }
+@keyframes move { 0% { filter: drop-shadow(0 40px 20px #0462DB); }
+                 100% { filter: drop-shadow(0 20px 30px #0132DB); } }
 
-                                       .seccion1-content { height: max-content; }
-                                       .seccion1-img-container { height: 60%; } }
+
+@media screen and (max-width: 700px) { .seccion1-container { flex-direction: column;
+                                                             height: max-content; }
+
+                                       .seccion1-content,
+                                       .seccion1-img { width: 100%;
+                                                       padding: 15px; }
+
+                                       .seccion1-content { height: max-content; } }
+
+@media screen and (max-width: 420px) { .seccion1-nombre { font-size: 1.5em; }
+                                       .seccion1-content p { font-size: .7em; } }
 
 
 
@@ -186,56 +274,3 @@ ul { list-style-type: none; }
                                               text-align: center;
                                               font-weight: bold;
                                               margin-bottom: 20px; }
-
-                      .seccion2-imgs-container { width: 100%;
-                                                 display: grid;
-                                                 grid-template-columns: repeat(3,1fr);
-                                                 grid-template-rows: repeat(2,300px);
-                                                 grid-gap: 15px; }
-
-                                                 .seccion2-imgs-container div { overflow: hidden;
-                                                                                display: flex;
-                                                                                justify-content: center;
-                                                                                align-items: center; }
-
-                                                                                .seccion2-img1 { background-image: url(multimedia/imagenes/foto1.webp);
-                                                                                                 background-attachment: scroll;
-                                                                                                 background-repeat: no-repeat;
-                                                                                                 background-position: center;
-                                                                                                 background-size: cover;
-                                                                                                 width: 100%; }
-                                                                                
-                                                                                .seccion2-img2 { background-image: url(multimedia/imagenes/foto2.webp);
-                                                                                                 background-attachment: scroll;
-                                                                                                 background-repeat: no-repeat;
-                                                                                                 background-position: center;
-                                                                                                 background-size: cover;
-                                                                                                 width: 100%; }
-                                                                                
-                                                                                .seccion2-img3 { background-image: url(multimedia/imagenes/foto3.webp);
-                                                                                                 background-attachment: scroll;
-                                                                                                 background-repeat: no-repeat;
-                                                                                                 background-position: center;
-                                                                                                 background-size: cover;
-                                                                                                 width: 100%; }
-                                                                                
-                                                                                .seccion2-img4 { background-image: url(multimedia/imagenes/foto4.webp);
-                                                                                                 background-attachment: scroll;
-                                                                                                 background-repeat: no-repeat;
-                                                                                                 background-position: center;
-                                                                                                 background-size: cover;
-                                                                                                 width: 100%; }
-                                                                                
-                                                                                .seccion2-img5 { background-image: url(multimedia/imagenes/foto5.webp);
-                                                                                                 background-attachment: scroll;
-                                                                                                 background-repeat: no-repeat;
-                                                                                                 background-position: center;
-                                                                                                 background-size: cover;
-                                                                                                 width: 100%; }
-                                                                                
-                                                                                .seccion2-img6 { background-image: url(multimedia/imagenes/foto6.webp);
-                                                                                                 background-attachment: scroll;
-                                                                                                 background-repeat: no-repeat;
-                                                                                                 background-position: center;
-                                                                                                 background-size: cover;
-                                                                                                 width: 100%; }
