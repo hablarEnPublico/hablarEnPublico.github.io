@@ -1,276 +1,1145 @@
 
-
 * { padding: 0;
     margin: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: 'Wix Madefor Display', sans-serif;
-    font-family: 'Open Sans', sans-serif; }
+    scroll-behavior: smooth; }
 
 
-body { background-color: #ccc;
-       padding: 60px 300px; }
+body { background-color: #040608; }
 
-ul { list-style-type: none; }
-
-@media screen and (max-width: 1500px) { body { padding: 60px 250px; } }
-@media screen and (max-width: 1450px) { body { padding: 60px 200px; } }
-@media screen and (max-width: 1320px) { body { padding: 60px 150px; } }
-@media screen and (max-width: 1200px) { body { padding: 60px 100px; } }
-@media screen and (max-width: 1100px) { body { padding: 60px 50px; } }
-@media screen and (max-width: 990px) { body { padding: 0px 0px;
-                                              background-color: white; } }
+.importante { color: yellow; }
+.importante2 { color: #123; }
+.importante3 { color: #222; }
 
 
+.main-container { width: 100%;
+	                height: 99vh;
+	                min-height: 800px;
+                  margin-bottom: 20px;
+                  padding: 40px 0px;
 
-/* Codigo seccion general-container*/
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
 
-.general-container { width: 100%;
-	                 min-height: 180vh;
-                     padding: 20px 0;
-                     border-radius: 15px;
-                     background-color: white; }
+                  background: #141E3099;
+                  background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/problema_fondo.webp);
+
+                  background-position: bottom;
+                  background-size: cover;
+                  background-attachment: scroll;
+                  background-repeat: no-repeat;
+
+                  overflow: hidden; }
+
+                  .main-content { width: 50%;
+                                  padding: 20px;
+                                  padding-top: 60px;
+
+                                  display: flex;
+                                  flex-direction: column;
+                                  justify-content: center;
+                                  align-items: center;
+                                  color: white;
+                                  font-size: 20px; }
+
+                                  .main-content h2 { font-size: 1.2em;
+                                                     font-family: 'Poppins', sans-serif;
+                                                     font-weight: bold;
+                                                     margin-bottom: 10px;
+                                                     text-align: center; }
+
+                                  .main-content h3 { font-size: 1.8em;
+                                                     color: white;
+                                                     font-family: 'Righteous',"Poppins",sans-serif;
+                                                     font-weight: bold;
+                                                     text-align: center;
+                                                     margin-bottom: 20px; }
+
+                                  .main-content span { font-size: .8em;
+                                                       font-family: "Poppins",sans-serif;
+                                                       font-weight: 300;
+                                                       text-align: center; }
+                  
+                  .main-img-container { width: 45%;
+
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-top: 20px; }
+
+                                        .main-img  { width: 80%;
+                                                     filter: drop-shadow(0 50px 15px yellow);
+                                                     transform: translateY(-50px);
+
+                                                     animation-name: float;
+                                                     animation-duration: 2s;
+                                                     animation-timing-function: ease-in-out;
+                                                     animation-direction: alternate-reverse;
+                                                     animation-fill-mode: forwards;
+                                                     animation-iteration-count: infinite; }
+
+
+@keyframes float {  0% { transform: translateY(-50px); }
+                        100% { transform: translateY(-20px); } }
+
+
+@media screen and (max-width: 950px) { .main-content,
+                                       .main-img-container { width: 70%; } }
+
+@media screen and (max-width: 670px) { .main-content,
+                                       .main-img-container { width: 80%; } }
+
+@media screen and (max-width: 520px) { .main-content,
+                        			   .main-img-container { width: 100%; } }
 
 
 
-/* Codigo seccion modal menu responsive*/
 
-.modal-container { width: 100%;
-                   height: 100vh;
+/*Codigo seccion intro*/
 
-                   background-color: #0001;
-                   display: none;
+.intro-container { width: 100%;
+                   display: flex;
+                   flex-direction: column;
                    justify-content: center;
                    align-items: center;
-                   position: fixed;
-                   top: 0;
-                   left: 0;
-                   z-index: 1000;
-                   transition: background-color .2s ease-in-out; }
+                   padding: 60px 20px;
+                   font-size: 20px;
+                   font-family: 'Righteous',"Poppins",sans-serif; }
 
-.modal-container-open { display: flex;
-                        background-color: #0008  }
+                   .intro-container-tittle { font-size: 1.5em;
+                                             color: white;
+                                             font-weight: bold;
+                                             margin-bottom: 20px;
+                                             text-align: center !important;
+                                             padding: 0px 20px; }
 
-                   .modal-content { width: 40%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: center;
-                                    border-radius: 15px;
-                                    background-color: white;
-                                    padding: 20px;
-                                    transform: scale(.8);
-                                    opacity: 0;
-                                    transition: transform .2s ease-in-out, opacity .2s ease-in-out; }
+                   .intro-container-img { animation-name: flecha_abajo;
+                                          animation-duration: .5s;
+                                          animation-iteration-count: infinite;
+                                          animation-fill-mode: forwards;
+                                          animation-direction: alternate-reverse;
+                                          animation-timing-function: ease-in-out;
+                                          margin-bottom: 20px; }
 
-                                    .modal-content-open { opacity: 1;
-                                                          transform: scale(1);  }
+                   .intro-video-container { width: 80%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center; }
 
-                                    .modal-cerrar-container { width: 100%;
-                                                              display: flex;
-                                                              justify-content: space-between;
-                                                              align-items: center;
-                                                              font-size: 20px;
-                                                              margin-bottom: 20px; }
+                                            .intro-video-container iframe { width: 80%;
+                                                                            height: 500px;
+                                                                            border: none; }
 
-                                                              .modal-cerrar-container span { font-size: 1em;
-                                                                                             color: #0462DB;
-                                                                                             text-align: center;
-                                                                                             font-weight: bold; }
-
-                                                              .modal-cerrar { cursor: pointer; }
-
-                                    .modal-menu-container { width: 100%;
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            justify-content: center;
-                                                            align-items: center;
-                                                            font-size: 20px; }
-
-                                                            .modal-menu-opciones { width: 100%;
-                                                                                   display: flex;
-                                                                                   flex-direction: column;
-                                                                                   justify-content: center;
-                                                                                   align-items: center;
-                                                                                   font-size: 20px;
-                                                                                   font-weight: bold; }
-
-                                                                                   .modal-menu-opciones li { margin-bottom: 25px;
-                                                                                                             cursor: pointer;
-                                                                                                             color: #222;
-                                                                                                             transition: color .2s ease-in-out;
-                                                                                                             font-size: .7em; }
-
-                                                                                                             .modal-menu-opciones li:hover { color: #0462DB; }
-
-
-@media screen and (min-width: 800px) { .modal-container { display: none; } }
-@media screen and (max-width: 650px) { .modal-content { width: 60%; } }
-@media screen and (max-width: 500px) { .modal-content { width: 70%; } }
-@media screen and (max-width: 450px) { .modal-content { width: 80%; } }
-@media screen and (max-width: 400px) { .modal-content { width: 90%; } }
+@keyframes flecha_abajo  { 0% { transform: translateY(0); }
+                         100% { transform: translateY(20px); }  }
 
 
 
-/* Codigo seccion barra de navegacion*/
-.nav-container { width: 100%;
-	             padding: 40px 60px;
-                 display: flex;
-                 flex-direction: row;
-                 justify-content: space-between;
-                 align-items: center;
+@media screen and (max-width: 1230px) { .intro-video-container iframe { width: 100%;
+	                                                                    height: 400px; } }
 
-                 font-size: 20px;
-                 font-family: 'Wix Madefor Display', sans-serif; }
+@media screen and (max-width: 880px) { .intro-video-container { width: 100%; } }
 
-                 .nav-container span { font-weight: bold;
-                 	                   font-size: 1.4em;
-                                       color: #000;
-                                       text-align: left;
-                                       width: 50%; }
+@media screen and (max-width: 700px) { .intro-boton-container { margin-top: 40px; } }
+@media screen and (max-width: 600px) { .intro-boton-container { margin-top: 20px; }
+                                       .intro-container { padding: 40px 0px; }
 
-                 .nav-container ul { width: 50%;
-                                     display: flex;
-                                     justify-content: space-around;
-                                     font-size: 20px; }
+                                       .intro-container-img { margin-bottom: 0px; } }
 
-                                     .nav-container ul li { font-size: .8em;
-                                                            font-weight: bold;
-                                                            color: #000;
-                                                            text-align: center;
-                                                            cursor: pointer;
-                                                            transition: transform .2s ease-in-out, color .2s ease-in-out }
+@media screen and (max-width: 545px) { .intro-container span { margin-bottom: 0px;
+                                                               font-size: 1em; } }
 
-                                                            .nav-container ul li:hover { transform: translateY(5px);
-                                                                                         color: #0462DB; }
-
-                 .nav-menu-responsive { display: none;
-                                        cursor: pointer; }
-
-@media screen and (max-width: 800px) { .nav-container ul { display: none; }
-                                       .nav-menu-responsive { display: flex; } }
-
-@media screen and (max-width: 700px) { .nav-container { padding: 40px 15px; } }
-@media screen and (max-width: 500px) { .nav-container span { font-size: 1em; } }
-
-
-/* Codigo seccion 1*/
-.seccion1-container { width: 100%;
-                      height: 70vh;
-
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      font-size: 20px; }
-
-                      .seccion1-content { width: 50%;
-                                          height: 100%;
-                                          display: flex;
-                                          flex-direction: column;
-                                          justify-content: center;
-                                          align-items: flex-start;
-                                          padding-right: 10px;
-                                          padding-left: 60px; }
-
-                                          .seccion1-saludo { font-size: 1.5em;
-                                                             color: #222;
-                                                             text-align: left;
-                                                             font-weight: bold;
-                                                             position: relative; }
-
-                                                             .seccion1-escribir-saludo { width: 100%;
-                                                                                         position: absolute;
-                                                                                         right: 0;
-                                                                                         background-color: white;
-                                                                                         border-left: 4px solid #0462DB; }
-
-                                          .seccion1-nombre { font-size: 2em;
-                                                             color: #111;
-                                                             text-align: left;
-                                                             margin-bottom: 10px;
-                                                             font-weight: bold;
-                                                             position: relative; }
-
-                                                             .seccion1-escribir-nombre { width: 100%;
-                                                                                         position: absolute;
-                                                                                         background-color: white;
-                                                                                         right: 0;
-                                                                                         border-left: 4px solid #0462DB;   }
-
-                                          .seccion1-profesion { font-size: 1em;
-                                                                color: #0462DB;
-                                                                margin-bottom: 10px;
-                                                                text-align: left;
-                                                                font-weight: bold; }
-
-                                          .seccion1-content p { font-size: .8em;
-                                                                color: #333;
-                                                                text-align: left;
-                                                                margin-bottom: 20px; }
-
-                                          .seccion1-content-redes { width: 100%;
-                                                                    display: flex;
-                                                                    justify-content: flex-start;
-                                                                    align-items: center; }
-
-                                                                    .seccion1-content-redes img { padding-right: 10px;
-                                                                                                  cursor: pointer; }
-
-                      .seccion1-img { width: 50%;
-                                      filter: drop-shadow(0 40px 20px #0462DB);
-                                      transform: translateY(-20px);
-
-                                      animation-name: move;
-                                      animation-duration: 1.5s;
-                                      animation-iteration-count: infinite;
-                                      animation-timing-function: linear;
-                                      animation-direction: alternate-reverse; }
-
-
-
-@keyframes escribir { 0% { width: 100%; }
-                      100% { width: 0%; } }
-
-@keyframes move { 0% { filter: drop-shadow(0 40px 20px #0462DB); }
-                 100% { filter: drop-shadow(0 20px 30px #0132DB); } }
-
-
-@media screen and (max-width: 700px) { .seccion1-container { flex-direction: column;
-                                                             height: max-content; }
-
-                                       .seccion1-content,
-                                       .seccion1-img { width: 100%;
-                                                       padding: 15px; }
-
-                                       .seccion1-content { height: max-content; } }
-
-@media screen and (max-width: 420px) { .seccion1-nombre { font-size: 1.5em; }
-                                       .seccion1-content p { font-size: .7em; } }
+@media screen and (max-width: 500px) { .intro-boton-container { margin-top: 0px; } }
 
 
 
 
-/* Codigo seccion 2*/
 
-.seccion2-container { width: 100%;
-                      padding: 60px;
 
+/* Codigo seccion pain*/
+
+.pain-container { width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 40px 20px;
+                  font-size: 20px;
+                  font-family: "Poppins",sans-serif;
+
+                  background: #141E30;
+                  background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                  background: linear-gradient(to top, #000, #141E3099), url("multimedia/imagenes/pain2.webp");
+
+                  background-position: top;
+                  background-size: cover;
+                  background-attachment: scroll;
+                  background-repeat: no-repeat;  }
+
+                  .pain-container h4 { font-size: 1.5em;
+                                       color: white;
+                                       font-weight: bold;
+                                       text-align: center;
+                                       margin-bottom: 20px;
+                                       font-family: 'Righteous',"Poppins",sans-serif; }
+
+                  .pain-content { width: 60%;
+                                  display: flex;
+                                  flex-direction: row;
+                                  justify-content: center;
+                                  align-items: center; }
+
+                                  .pain-content-dolores { width: 50%;
+                                                          display: flex;
+                                                          flex-direction: column;
+                                                          justify-content: center;
+                                                          align-items: center; }
+    
+                                                          .pain-content-dolores div { font-size: 20px;
+                                                                                      font-family: "Poppins",sans-serif;
+                                                                                      width: 100%;
+                                                                                      display: flex;
+                                                                                      flex-direction: row;
+                                                                                      justify-content: flex-start;
+                                                                                      align-items: flex-start;
+                                                                                      margin-bottom: 8px; }          
+
+                                                                                      .pain-content-dolores div span { font-size: .8em;
+                                                                                                                       color: white;
+                                                                                                                       margin-left: 2px; }
+
+                                  
+                                  
+
+                                  .pain-img { width: 40%;
+                                              border-radius: 5px;
+                                              filter: drop-shadow(0 10px 10px yellow);
+         
+                                              animation-name: float2;
+                                              animation-duration: 2s;
+                                              animation-direction: alternate-reverse;
+                                              animation-timing-function: ease-in-out;
+                                              animation-iteration-count: infinite;
+                                              animation-fill-mode: forwards; }
+
+
+@keyframes float2 { 0% { transform: translateY(-20px); }
+                  100% { transform: translateY(20px); } }
+
+@media screen and (max-width: 1300px) { .pain-content { width: 80%; } }
+@media screen and (max-width: 970px) { .pain-content { width: 100%; } }
+@media screen and (max-width: 750px) { .pain-content { flex-direction: column-reverse; }
+                                       .pain-content-dolores,
+                                       .pain-img { margin: 0px;
+                                                   width: 100%; }
+
+                                       .pain-content-dolores,
+                                       .pain-container h4 { padding: 0px 15px;
+                                                            font-size: 1em; }
+
+                                       .pain-container { background-position: right; }
+
+                                       .pain-img { margin-bottom: 20px; } }
+
+@media screen and (max-width: 520px) { .pain-container { padding: 40px 0px; }
+                                       .pain-img { border-radius: 0px; } }
+
+
+/* Codigo seccion problema 2*/
+
+.problema2-container { width: 100%;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 40px 20px;
+                       font-size: 20px;
+                       font-family: "Poppins",sans-serif; }
+
+                       .problema2-tittle { font-size: 1.5em;
+                                           font-family: "Righteous","Poppins",sans-serif;
+                                           font-weight: bold;
+                                           margin-bottom: 20px;
+                                           text-align: center;
+                                           color: white;
+                                           width: 50%;
+
+                                           opacity: 0;
+                                           transform: translateY(-70%);
+                                           transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+
+                       .problema2-parrafo { font-size: .8em;
+                                            color: white;
+                                            font-weight: normal;
+                                            margin-bottom: 20px;
+                                            text-align: center;
+                                            width: 50%;
+
+                                            opacity: 0;
+                                            transform: translateY(-70%);
+                                            transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+
+                       .problema2-logo { width: 30px;
+                                         margin-bottom: 20px;
+                                         opacity: 0;
+                                         transform: translateY(-70%);
+                                         transition: transform .4s ease-in-out, opacity .5s ease-in-out; }
+                       
+                       .problema2-efect-view { opacity: 1;
+                                               transform: translateY(0); }
+
+
+@media screen and (max-width: 880px) { .problema2-container p,.problema2-container h4 { width: 70%; } }
+@media screen and (max-width: 700px) { .problema2-container p,.problema2-container h4 { width: 90%; } }
+@media screen and (max-width: 550px) { .problema2-container p,.problema2-container h4 { width: 100%; }
+                                       .problema2-container { padding: 40px 15px; } }
+
+
+
+
+/* Codigo seccion realidad*/
+
+.realidad-container { width: 100%;
+                     
                       display: flex;
                       flex-direction: column;
                       justify-content: center;
                       align-items: center;
+                      padding: 40px 20px;
+                      margin-bottom: 20px;
 
                       font-size: 20px;
-                      background-color: #123; }
+                      font-family: "Poppins",sans-serif; }
 
-                      .seccion2-container h4 { font-size: 1.5em;
-                                               color: white;
-                                               text-align: center;
-                                               margin-bottom: 20px;
-                                               font-weight: bold; }
+                      .realidad-tittle { font-size: 1.5em;
+                                         color: white;
+                                         font-weight: bold;
+                                         font-family: "Righteous","Poppins",sans-serif;
+                                         margin-bottom: 20px;
+                                         text-align: center;
+                                         width: 50%;
+                                         transform: translateY(50%);
+                                         opacity: 0;
+                                         transition: opacity 1s ease-in-out, transform 1s ease-in-out; }
 
-                      .seccion2-container p { font-size: .8em;
-                                              color: white;
-                                              text-align: center;
-                                              font-weight: bold;
-                                              margin-bottom: 20px; }
+                      .realidad-parrafo { font-size: .8em;
+                                          color: white;
+                                          text-align: center;
+                                          width: 50%;
+                                          font-weight: normal;
+                                          transform: translateY(50%);
+                                          opacity: 0;
+                                          transition: opacity 1s ease-in-out, transform 1s ease-in-out; }
+
+                      .realidad-efect-view { transform: translateY(0);
+                                             opacity: 1; }
+
+@media screen and (max-width: 880px) { .realidad-container p,.realidad-container h4 { width: 70%; } }
+@media screen and (max-width: 700px) { .realidad-container p,.realidad-container h4 { width: 90%; } }
+@media screen and (max-width: 550px) { .realidad-container p,.realidad-container h4 { width: 100%; }
+                                       .realidad-container { padding: 40px 15px; } }
+
+
+
+/* codigo seccion curso*/
+
+.curso-tittle-container { width: 100%;
+                          height: 50vh;
+                          min-height: 400px;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;
+                          font-size: 20px;
+                          font-family: "Righteous","Poppins",sans-serif;
+                          padding: 0 20px;
+
+                          background: #141E30;
+                          background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                          background: linear-gradient(to top, rgba(0,0,0,.9), #141E3088), url("multimedia/imagenes/realidad_fondo.webp");
+
+                          background-position: bottom;
+                          background-size: cover;
+                          background-attachment: scroll;
+                          background-repeat: no-repeat; }
+
+                          .curso-tittle { font-size: 1.5em;
+                                          color: white;
+                                          text-align: center;
+                                          margin-bottom: 20px;
+                                          opacity: 0;
+                                          transform: translateY(70%);
+                                          transition: transform 1s ease-in-out ,opacity 1s ease-in-out; }
+
+                                          .curso-tittle-view { opacity: 1;
+                                                               transform: translateY(0); }
+
+                          .curso-tittle-container img { animation-name: flecha_abajo;
+                                                        animation-duration: .5s;
+                                                        animation-iteration-count: infinite;
+                                                        animation-fill-mode: forwards;
+                                                        animation-direction: alternate-reverse;
+                                                        animation-timing-function: ease-in-out; } 
+
+
+.curso-container { width: 100%;
+                   height: 50vh;
+                   min-height: 740px;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: center;
+                   align-items: center;
+                   padding: 20px;
+                   position: relative;
+                   overflow: hidden;
+                   font-size: 20px; }
+
+                   .curso-tittle { width: 100%;
+                                   font-size: 1.5em;
+                                   color: white;
+                                   text-align: center; }
+
+                   .curso-img { width: 30%;
+                                filter: drop-shadow(0px 30px 25px #123);
+                                margin-bottom: 20px;
+                                transform: translateX(50%);
+                                position: relative;
+                                z-index: 300;
+                                transition: transform .8s ease-in-out 1s; }
+
+                                .curso-img-view { transform: translateX(0); }
+
+                   .curso-content { display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    font-size: 20px;
+                                    font-family: "Poppins",sans-serif;
+                                    margin-left: 10px;
+                                    transform: translateX(-50%);
+                                    position: relative;
+                                    z-index: 100;
+                                    transition: transform .8s ease-in-out .8s, opacity 1s ease-in-out 1s;
+                                    opacity: 0; }
+
+                                    .curso-content-view { transform: translateX(0);
+                                                          opacity: 1; }
+
+                                    .curso-content h4 { font-size: .8em;
+                                                        color: white;
+                                                        margin-bottom: 8px; }
+
+
+@media screen and (max-width: 1280px){ .curso-img { width: 40%; }  }
+
+@media screen and (max-width: 830px) { .curso-img { width: 50%; } }
+@media screen and (max-width: 720px) { .curso-container { flex-direction: column; }
+
+                                       .curso-img { width: 60%;
+                                                    filter: drop-shadow(0px -20px 30px #123);
+                                                    transform: translateX(0) translateY(25%); }
+
+                                       .curso-content { width: 60%;
+                                                        margin-left: 0px;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        transform: translateX(0) translateY(-25%);  }
+
+                                                        .curso-content h4 { text-align: center; } }
+
+@media screen and (max-width: 670px) { .curso-img { width: 80%; }
+                                       .curso-content { width: 80%; } }
+
+@media screen and (max-width: 550px) { .curso-img,.curso-content { width: 100%; } }
+
+
+
+
+
+/* Codigo seccion productor*/
+
+.productor-container { width: 100%;
+	                     background: #141E30;
+                       background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                       background: linear-gradient(to top, #000, #141E3099);
+                       background-position: center;
+                       background-size: cover;
+                       background-attachment: scroll;
+                       background-repeat: no-repeat;
+
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       font-size: 20px;
+                       padding: 20px; }
+
+                       .productor-tittle { font-size: 1.5em;
+                                           font-weight: bold;
+                                           color: white;
+                                           margin: 20px 0px;
+                                           text-align: center;
+                                           font-family: "Righteous","Poppins",sans-serif;
+                                           width: 80%; }
+
+                       .productor-content-container { width: 60%;
+                                                      display: flex;
+                                                      flex-direction: column;
+                                                      justify-content: center;
+                                                      align-items: center; }
+
+                                                      .productor-img { width: 80%;
+                                                                       filter: drop-shadow(0 10px 12px yellow); }
+
+                                                       .productor-content { width: 100%;
+                                                                            font-size: 20px;
+                                                                            font-family: "Poppins",sans-serif;
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            justify-content: center;
+                                                                            align-items: center; }
+
+                                                                            .productor-content p { font-size: .8em;
+                                                                                                   color: white;
+                                                                                                   text-align: center;
+                                                                                                   margin-bottom: 15px; }
+
+                                                                            .productor-content span { font-size: 1em;
+                                                                                                      color: yellow;
+                                                                                                      text-align: center;
+                                                                                                      font-weight: bold;
+                                                                                                      width: 100%;
+                                                                                                      margin-bottom: 10px; }
+
+                                                                            .productor-content img { animation-name: flecha_abajo;
+                                                                                                     animation-duration: .5s;
+                                                                                                     animation-iteration-count: infinite;
+                                                                                                     animation-fill-mode: forwards;
+                                                                                                     animation-direction: alternate-reverse;
+                                                                                                     animation-timing-function: ease-in-out;
+                                                                                                     margin-bottom: 20px;  }
+
+@media screen and (max-width: 750px) { .productor-tittle { font-size: 1em; } }
+@media screen and (max-width: 660px) { .productor-content-container { width: 80%; }
+                                       .productor-img { width: 100%; } }
+@media screen and (max-width: 500px) { .productor-content-container { width: 100%; } }
+
+
+
+
+
+
+
+
+
+/* Codigo seccion lograr*/
+
+.lograr-container { width: 100%;
+                    padding: 20px;
+                    background-color: white;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center; }
+
+                    .lograr-img { width: 30%;
+                                  max-width: 1600px; }
+
+                    .lograr-content { width: 40%; 
+                    	              max-width: 1600px;
+                                      display: flex;
+                                      flex-direction: column;
+                                      justify-content: flex-start;
+                                      align-items: flex-start;
+                                      font-size: 20px;
+                                      font-family: "Poppins",sans-serif; }
+
+                                      .lograr-content h4 { font-size: 1.5em;
+                                                           color: #123;
+                                                           text-align: left;
+                                                           margin-bottom: 20px;
+                                                           font-family: 'Righteous',"Poppins",sans-serif; }
+
+                                      .lograr-content div { width: 100%;
+                                                            display: flex;
+                                                            justify-content: flex-start;
+                                                            align-items: flex-start;
+                                                            font-size: 20px;
+                                                            font-family: "Poppins",sans-serif;
+                                                            margin-bottom: 8px; }
+
+                                                            .lograr-content div span { font-size: .8em;
+                                                                                       color: #222;
+                                                                                       margin-left: 5px;
+                                                                                       text-align: left; }
+
+
+@media screen and (max-width: 1090px) { .lograr-img { width: 40%; } }
+@media screen and (max-width: 970px) { .lograr-content { width: 50%; } }
+@media screen and (max-width: 860px) { .lograr-img { width: 50%; } }
+@media screen and (max-width: 770px) { .lograr-container { flex-direction: column; }
+                                       .lograr-img,.lograr-content { width: 60%; } }
+
+@media screen and (max-width: 750px) { .lograr-img { width: 100%; }
+                                       .lograr-content { width: 80%; }
+                                       .lograr-content h4 { font-size: 1em; } }
+
+@media screen and (max-width: 510px) { .lograr-content { width: 100%; } }
+
+
+
+
+
+
+
+/* Codigo seccion obtendra*/
+
+.obtendra-container { width: 100%;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      padding: 20px 15px;
+                      font-size: 20px;
+                      padding-top: 40px;
+                      background-color: white; }
+
+                      .obtendra-tittle { font-size: 1.3em;
+                                         font-weight: bold;
+                                         text-align: center;
+                                         margin-bottom: 20px;
+                                         color: #123;
+                                         font-family: "Righteous","Poppins",sans-serif; }
+
+                      .obtendra-tarjetas-container { width: 60%;
+                                                     display: grid;
+                                                     grid-template-columns: repeat(3,1fr);
+                                                     grid-gap: 10px; }
+
+                                                     .obtendra-tarjetas { width: 100%;
+                                                                          display: flex;
+                                                                          flex-direction: column;
+                                                                          justify-content: center;
+                                                                          align-items: center;
+                                                                          
+                                                                          font-size: 20px;
+                                                                          font-family: "Poppins",sans-serif;
+                                                                          border-radius: 20px;
+                                                                          background-color: white;
+                                                                          padding: 20px;
+                                                                          border: 1px solid #ccc; }
+
+                                                                          .obtendra-tarjetas img { width: 50%; }
+
+                                                                          .obtendra-tarjetas span { font-size: .8em;
+                                                                                                    color: #123;
+                                                                                                    font-weight: bold;
+                                                                                                    margin-top: 5px;
+                                                                                                    text-align: center; }
+
+@media screen and (max-width: 1090px) { .obtendra-tarjetas-container { width: 80%; } }
+@media screen and (max-width: 960px) { .obtendra-tarjetas-container { width: 100%; } }
+@media screen and (max-width: 780px) { .obtendra-tarjetas-container { grid-template-columns: repeat(1,1fr);
+                                                                      grid-template-rows: repeat(3,1fr);
+                                                                      width: 60%; } }
+
+@media screen and (max-width: 550px) { .obtendra-tarjetas-container { width: 80%; } }
+@media screen and (max-width: 420px) { .obtendra-tarjetas-container { width: 100%; } }
+
+
+
+
+/* Codigo seccion cronometro*/
+
+.cronometro-container { width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px 15px; }
+
+                        .cronometro-content { width: 30%;
+                                              display: grid;
+                                              grid-template-columns: repeat(3,1fr);
+                                              grid-template-rows: repeat(1,150px);
+                                              grid-gap: 20px;
+                                              font-size: 20px; }
+
+                                              .cronometro-valores { width: 100%;
+                                                                    border: 2px solid #444;
+                                                                    font-family:"Righteous","Poppins",sans-serif;
+                                                                    font-size: 2em;
+                                                                    font-weight: bold;
+                                                                    color: white;
+                                                                    text-align: center;
+                                                                    border-radius: 20px;
+                                                                    margin: auto;
+                                                                    padding: 30px;
+                                                                    overflow: hidden; }
+
+@media screen and (max-width: 1220px) { .cronometro-content { width: 50%; } }
+@media screen and (max-width: 760px) { .cronometro-content { width: 60%; } }
+@media screen and (max-width: 677px) { .cronometro-content { width: 80%; } }
+@media screen and  (max-width: 560px) { .cronometro-content { width: 100%; } }
+
+
+/* Codigo seccion beneficios*/
+
+.beneficios-container { width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                        font-family: "Righteous","Poppins",sans-serif;
+                        padding: 20px;
+                        padding-bottom: 40px; }
+
+                        .beneficios-container h4 { font-size: 1.5em; 
+                                                   color: white;
+                                                   font-weight: bold;
+                                                   text-align: center;
+                                                   margin-bottom: 20px;
+                                                   margin-top: 20px; }
+
+                        .beneficios-container p { font-size: .8em;
+                                                  color: white;
+                                                  text-align: center;
+                                                  font-family: "Poppins",sans-serif;
+                                                  margin-bottom: 20px; }
+
+                        .beneficios-bono-container { width: 60%;
+                                                     border-radius: 15px;
+                                                     background-color: #0009;
+                                                     padding: 20px;
+                                                     margin-bottom: 15px;
+
+                                                     display: flex;
+                                                     justify-content: flex-start;
+                                                     align-items: center; }
+
+                                                     .beneficios-bono-img { width: 40%;
+                                                                            filter: drop-shadow(0 20px 30px #123); }
+
+                                                     .beneficios-bono-content { display: flex;
+                                                                                flex-direction: column;
+                                                                                justify-content: flex-start;
+                                                                                align-items: flex-start;
+
+                                                                                font-size: 20px;
+                                                                                font-family: "Righteous","Poppins",sans-serif; }
+
+                                                                                .beneficios-bono-content h4 { font-size: 1.2em;
+                                                                                                              color: white;
+                                                                                                              font-weight: bold;
+                                                                                                              margin-bottom: 20px;
+                                                                                                              text-align: left;
+                                                                                                              padding-bottom: 2px;
+                                                                                                              border-bottom: 1px solid #ccc; }
+
+                                                                                .beneficios-bono-content p  { font-size: .8em;
+                                                                                                              color: #ccc;
+                                                                                                              text-align: left;
+                                                                                                              font-family: "Poppins",sans-serif; }
+
+                                                                                .beneficios-bono-content span { font-size: .8em;
+                                                                                                                color: white;
+                                                                                                                text-align: left;
+                                                                                                                border: 2px solid yellow;
+                                                                                                                border-radius: 15px;
+                                                                                                                padding: 8px 15px;
+                                                                                                                margin-bottom: 8px;
+                                                                                                                width: max-content; }
+
+                                                                                .beneficios-bono-content h5 { font-size: .8em;
+                                                                                                              color: green;
+                                                                                                              text-align: left;
+                                                                                                              font-family: "Poppins",sans-serif; }
+
+                         .beneficios-bono-container2 { flex-direction: row-reverse; }
+                         .beneficios-bono-container4 { flex-direction: row-reverse; }   
+
+
+@media screen and (max-width: 1090px) { .beneficios-bono-img { width: 50%; }
+                                        .beneficios-bono-container { width: 80%; } }
+
+@media screen and (max-width: 780px) { .beneficios-bono-container { width: 100%; } }
+@media screen and (max-width: 630px) { .beneficios-bono-container  { flex-direction: column; }
+                                                                   
+                                                                   .beneficios-bono-content { width: 70%; }
+                                                                   .beneficios-bono-img { width: 70%; } }
+
+@media screen and (max-width: 480px) { .beneficios-bono-img { width: 80%; }
+                                       .beneficios-bono-content { width: 90%; }
+                                                                .beneficios-bono-content p { font-size: .7em; } }
+
+@media screen and (max-width: 430px) { .beneficios-bono-img {width: 100%;}
+                                       .beneficios-bono-content { width: 100%; } }
+
+
+
+
+
+
+ /* Codigo seccion problema 3*/
+.problema3-container { width: 100%;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 20px;
+                       font-size: 20px;
+                       font-family: "Poppins",sans-serif; }
+
+                      .problema3-tittle { font-size: 1.5em;
+                                          font-family: "Righteous","Poppins",sans-serif;
+                                          font-weight: bold;
+                                          margin-bottom: 20px;
+                                          text-align: center;
+                                          color: white;
+                                          opacity: 0;
+                                          transform: translateY(50%);
+                                          transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+
+
+                      .problema3-parrafo { font-size: .8em;
+                                           color: white;
+                                           font-weight: normal;
+                                           margin-bottom: 20px;
+                                           text-align: center;
+                                           width: 50%;
+                                           opacity: 0;
+                                           transform: translateY(50%);
+                                           transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+
+                      .problema3-efect-view { opacity: 1;
+                                              transform: translateY(0); }
+                       
+                       .problema3-flecha { animation-name: flecha_abajo;
+                                           animation-duration: .5s;
+                                           animation-iteration-count: infinite;
+                                           animation-fill-mode: forwards;
+                                           animation-direction: alternate-reverse;
+                                           animation-timing-function: ease-in-out; }
+
+@media screen and (max-width: 880px) { .problema3-container p { width: 70%; } }
+@media screen and (max-width: 700px) { .problema3-container p { width: 90%; } }
+@media screen and (max-width: 550px) { .problema3-container p { width: 100%; }
+                                       .problema3-container { padding: 40px 15px; } }
+
+
+
+
+/* Codigo seccion oferta*/
+
+.oferta-container { width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 0;
+                    padding-top: 60px;
+                    background-color: white;
+                    font-size: 20px; }
+
+                    .oferta-container h4 { font-size: 1.5em;
+                                           color: #123;
+                                           text-align: center;
+                                           font-family: "Righteous","Poppins",sans-serif;
+                                           font-weight: bold;
+                                           margin-bottom: 20px;
+                                           padding: 0px 20px; }
+
+                    .oferta-img { width: 50%; }
+
+                    .oferta-resumen-container { width: 50%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-items: center;
+                                                font-size: 20px;
+                                                border: 1px solid #ccc;
+                                                border-radius: 15px;
+                                                margin-top: 20px;
+                                                padding: 15px; }
+
+                                                .oferta-resumen-container h4 { font-size: 1.5em;
+                                                                               color: #123;
+                                                                               padding-bottom: 5px;
+                                                                               border-bottom: 1px solid #123;
+                                                                               font-family: "Righteous","Poppins",sans-serif;
+                                                                               font-weight: bold;
+                                                                               margin-bottom: 20px; }
+
+                                                .oferta-resumen-content { width: 60%;
+                                                                          display: flex;
+                                                                          flex-direction: column;
+                                                                          justify-content: flex-start;
+                                                                          align-items: flex-start; }
+
+                                                                          .oferta-resumen-content div { width: 100%;
+                                                                                                        display: flex;
+                                                                                                        justify-content: flex-start;
+                                                                                                        align-items: flex-start;
+                                                                                                        margin-bottom: 8px;
+                                                                                                        font-size: 20px;
+                                                                                                        font-family: "Poppins",sans-serif; }
+
+                                                                                                        .oferta-resumen-content div span { font-size: .8em;
+                                                                                                                                           color: #123;
+                                                                                                                                           text-align: left;
+                                                                                                                                           margin-left: 4px;
+                                                                                                                                           font-weight: bold; }
+                   
+                   .oferta-precio-img { width: 40%; }
+                   .oferta-metodos-img { width: 30%;
+                                         padding: 0px 10px; }
+                   .oferta-flecha { margin-top: 20px;
+                                    width: 80px;
+                                    animation-name: flecha_abajo;
+                                    animation-duration: .5s;
+                                    animation-iteration-count: infinite;
+                                    animation-fill-mode: forwards;
+                                    animation-direction: alternate-reverse;
+                                    animation-timing-function: ease-in-out; }
+
+
+@media screen and (max-width: 1080px) { .oferta-precio-img,.oferta-img,.oferta-resumen-container,.oferta-metodos-img { width: 70%; } }
+@media screen and (max-width: 845px) { .oferta-precio-img,.oferta-img,.oferta-resumen-container { width: 80%; } }
+
+@media screen and (max-width: 645px) { .oferta-precio-img,.oferta-img,.oferta-resumen-container,.oferta-metodos-img { width: 90%; }
+                                       .oferta-resumen-content {width: 80%;} }
+@media screen and (max-width: 520px) { .oferta-precio-img,.oferta-img,.oferta-resumen-container,.oferta-metodos-img { width: 100%; }
+                                       .oferta-container h4 { font-size: 1.2em; }
+                                       .oferta-resumen-content { width: 100%; }
+                                       .oferta-resumen-container { border: none;
+                                                                   justify-content: flex-start;
+                                                                   align-items: flex-start; }
+
+                                                                   .oferta-resumen-container h4 { text-align: left;
+                                                                                                  font-size: 1.2em; } }
+
+
+
+
+
+/* Codigo seccion call to action*/
+
+.call-container { width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 40px 15px;
+                  background-color: white;
+                  cursor: pointer;
+                  font-size: 20px; }
+
+                  .call-content { width: 20%;
+                                  padding: 10px 17px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  margin-bottom: 20px;
+
+                                  border-radius: 35px;
+                                  background: #0F2027;  /* fallback for old browsers */
+                                  background: -webkit-linear-gradient(to left, #2C5364, #123, #040608);  /* Chrome 10-25, Safari 5.1-6 */
+                                  background: linear-gradient(to left,#203A43, #123, #040608); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                                  font-weight: bold;
+
+                                  font-size: 20px;
+                                  font-family: "Poppins",sans-serif;
+                                  position: relative;
+                                  overflow: hidden;
+                                  outline: none;
+                                  transition: outline .2s ease-in-out; }
+
+                                  .call-content span { font-size: 1em; 
+                                                       color: white;
+                                                       text-align: center;
+                                                       font-weight: bold; }
+
+                                  .call-overlay { width: 100%;
+                                                  height: 100%;
+                                                  position: absolute;
+                                                  top: 0;
+                                                  left: 0;
+                                                  background-color: white;
+
+                                                  display: flex;
+                                                  justify-content: center;
+                                                  align-items: center;
+
+                                                  font-size: 20px;
+                                                  font-family: "Poppins",sans-serif;
+                                                  color: #123;
+                                                  font-weight: bold;
+                                                  transform: scale(0);
+                                                  opacity: 0;
+                                                  transition: transform .2s ease-in-out, opacity .2s ease-in-out; }
+
+                                                  .call-overlay-view { transform: scale(1);
+                                                                       opacity: 1; }
+
+                  .call-subtittle { font-size: .8em;
+                                    color: #123;
+                                    font-family: "Poppins",sans-serif;
+                                    margin-bottom: 5px;
+                                    text-align: center;
+                                    font-weight: bold;  }
+
+                  .call-certificacion { width: max-content;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 20px;
+                                        font-family: "Poppins",sans-serif; }
+
+                                        .call-certificacion span { font-size: .7em;
+                                                                   color: #123;
+                                                                   margin-bottom: 2px;
+                                                                   text-align: center;
+                                                                   font-weight: bold; }
+
+@media screen and (max-width: 1250px) { .call-content { width: 30%; } }
+@media screen and (max-width: 1080px) { .call-content { width: 40%; } }
+@media screen and (max-width: 730px) { .call-content { width: 50%; } }
+@media screen and (max-width: 520px) { .call-content { width: 60%; } }
+@media screen and (max-width: 450px) { .call-content { width: 70%; } }
+@media screen and (max-width: 390px) { .call-content { width: 80%; } }
+@media screen and (max-width: 350px) { .call-content { width: 90%; } }
+
+
+/* Codigo seccion garantia*/
+
+.garantia-container { width: 100%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding: 20px 15px; }
+
+                      .garantia-content { width: 60%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          border-radius: 20px;
+                                          border: 1px solid #123;
+                                          padding: 20px; }
+
+                                          .garantia-content img { width: 40%; }
+
+                                          .garantia-contenido { width: max-content;
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                justify-content: flex-start;
+                                                                align-items: flex-start;
+                                                                font-size: 20px;
+                                                                font-family: "Poppins",sans-serif; }
+
+                                                                .garantia-contenido h4 { font-size: 1.5em; 
+                                                                                         color: white;
+                                                                                         margin-bottom: 20px;
+                                                                                         text-align: left;
+                                                                                         font-family: "Righteous","Poppins",sans-serif; }
+
+                                                                .garantia-contenido p { font-size: .8em;
+                                                                                        color: white;
+                                                                                        text-align: left;
+                                                                                        margin-bottom: 20px; }
+
+                                                                .garantia-boton-devolucion { width: max-content;
+                                                                                             padding: 4px 10px;
+                                                                                             border-radius: 15px;
+                                                                                             background-color: white;
+                                                                                             color: #123;
+                                                                                             font-size: .8em;
+                                                                                             font-weight: bold;
+                                                                                             text-align: left;
+                                                                                             cursor: pointer;
+                                                                                             transition: background-color .2s ease-in-out;
+                                                                                             border: 1px solid white;  }
+
+                                                                                             .garantia-boton-devolucion:hover { background-color: transparent;
+                                                                                                                                color: white; }
+
+
+
+@media screen and (max-width: 1310px) { .garantia-content { width: 70%; } }
+@media screen and (max-width: 1100px) { .garantia-content { width: 80%; } }
+@media screen and (max-width: 980px) { .garantia-content { width: 100%; } }
+@media screen and (max-width: 665px) { .garantia-content { flex-direction: column; }
+                                       .garantia-content img { width: 60%; }
+                                       .garantia-contenido { width:60%;
+                                                             justify-content: center;
+                                                             align-items: center; }
+                                                           .garantia-contenido h4,
+                                                           .garantia-contenido p,
+                                                           .garantia-boton-devolucion { text-align: center; } }
+
+@media screen and (max-width: 520px) { .garantia-content img, .garantia-contenido { width: 80%; } }
+@media screen and (max-width: 500px) { .garantia-content img, .garantia-contenido { width: 100%; } }
+
+
+
+/* Codigo seccion prueba social*/
+
+.social-container { width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 0; }
+
+                    .social-content { width: 60%;
+                                      display: flex;
+                                      flex-direction: column;
+                                      justify-content: center;
+                                      align-items: center; }
+
+                                      .social-content iframe { width: 100%;
+                                                               height: 300px;
+                                                               border: none;
+                                                               margin-bottom: 10px; }
+
+@media screen and (max-width: 860px) { .social-content { width: 80%; } }
+@media screen and (max-width: 640px) { .social-content { width: 100%; } }
+@media screen and (max-width: 540px) { .social-content iframe { margin-bottom: 0px; }
+                                       .social-container { padding: 0px; } }
+
+
+
+/* Codigo seccion final*/
+
+.final-container { width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content:space-around;
+                   align-items: center;
+                   padding: 20px;
+                   height: 80vh;
+
+                   background: #141E30;
+                   background: -webkit-linear-gradient(to top, #243B55, #141E30);
+                   background: linear-gradient(to top, rgba(0,0,0), #0009), url("multimedia/imagenes/realidad_fondo.webp");
+
+                   background-position: bottom;
+                   background-size: cover;
+                   background-attachment: scroll;
+                   background-repeat: no-repeat;
+                   font-size: 20px;  }
+
+                   .final-container h4 { font-size: 1.5em;
+                                         color: white;
+                                         font-family: "Righteous","Poppins",sans-serif;
+                                         text-align: center; }
+
+                   .final-container p { font-size: .8em;
+                                        font-family: "Poppins",sans-serif;
+                                        color: #ccc;
+                                        text-align: center; }
