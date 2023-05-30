@@ -15,6 +15,7 @@ body { padding: 40px 260px; }
 @media screen and (max-width: 1110px ) { body { padding: 40px 100px; } }
 @media screen and (max-width: 1010px ) { body { padding: 40px 50px; } }
 @media screen and (max-width: 878px ) { body { padding: 40px 0px; } }
+@media screen and (max-width: 450px) { body { padding: 0; } }
 
 
 /* Codigo seccion logo*/
@@ -28,6 +29,7 @@ body { padding: 40px 260px; }
                   .logo-img { width: 40px; }
 
 
+.importante { color: #400; }
 
 
 /* Codigo seccion main*/
@@ -59,24 +61,27 @@ body { padding: 40px 260px; }
                  
 
                                   .main-content span { font-size: 1.3em;
-                                                       color: #222;
-                                                       font-weight: 600; }
+                                                       color: #400;
+                                                       font-weight: 600;
+                                                       margin-bottom: 5px; }
+
+                                  .main-content p { font-size: .8em;
+                                                    color: #222; }
 
                    .main-img-container { width: 50%;
                    	                     height: 100%;
-                                         background-image: url(multimedia/imagenes/main.jpg);
+                                         background-image: url(multimedia/imagenes/main2.jpg);
                                          background-attachment: scroll;
                                          background-repeat: no-repeat;
                                          background-position: left;
-                                         background-size: contain; }
+                                         background-size: contain;
+                                         filter: grayscale(50); }
 
-@media screen and (max-width: 795px) { .main-container { flex-direction: column;
-                                                         height: max-content; }
+@media screen and (max-width: 795px) { .main-container { flex-direction: column; }
 
                                        .main-content { width: 80%;}
 
                                        .main-img-container { width: 80%;
-                                                             height: 400px;
                                                              background-size: cover;
                                                              background-position: center; } }
 
@@ -86,3 +91,35 @@ body { padding: 40px 260px; }
                                        .main-content h4 { font-size: 1.3em; }
                                        .main-content h3 { font-size: 1.8em; }
                                        .main-content span { font-size: 1em; } }
+
+
+
+
+/* Codigo seccion mejoras*/
+
+.mejoras-container { width: 100%;
+                     padding: 20px 15px;
+
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+                     font-size: 20px; }
+
+                     .mejoras-tittle { font-size: 1em;
+                                       font-weight: bold;
+                                       text-align: center;
+                                       margin-bottom: 20px; }
+
+                     .mejoras-content { width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 20px;
+                                        border-bottom: 1px solid #222; }
+
+                                        .mejoras-content span { font-size: 1em;
+                                                                color: #400;
+                                                                font-weight: bold;
+                                                                text-align: center;
+                                                                margin: 0 20px; }
