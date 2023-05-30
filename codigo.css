@@ -64,7 +64,7 @@ body { padding: 40px 260px; }
 
                    .main-img-container { width: 50%;
                    	                     height: 100%;
-                                         background-image: url(multimedia/imagenes/beneficios_bg.webp);
+                                         background-image: url(multimedia/imagenes/main.jpg);
                                          background-attachment: scroll;
                                          background-repeat: no-repeat;
                                          background-position: left;
@@ -81,4 +81,8 @@ body { padding: 40px 260px; }
                                                              background-position: center; } }
 
 @media screen and (max-width: 450px) { .main-content,
-                                       .main-img-container { width: 100%; } }
+                                       .main-img-container { width: 100%; }
+
+                                       .main-content h4 { font-size: 1.3em; }
+                                       .main-content h3 { font-size: 1.8em; }
+                                       .main-content span { font-size: 1em; } }
