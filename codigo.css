@@ -140,37 +140,84 @@ ul { list-style-type: none; }
 
 
 
-/* codigo seccion beneficios*/
+/* codigo seccion foto 2*/
 
-.beneficios-container { width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 20px 0px; }
+.foto2-container { width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   padding: 20px 0px; }
 
-                        .beneficios-img-container { width: 100%;
-                        	                        height: 400px;
-                                                    background-image: url(multimedia/imagenes/beneficios.jpg);
-                                                    background-attachment: scroll;
-                                                    background-repeat: no-repeat;
-                                                    background-position: bottom;
-                                                    background-size: cover;
-                                                    font-size: 20px;
-                                                    font-family: "Montserrat","Open Sans",sans-serif;
+                        .foto2-img-container { width: 100%;
+                        	                   height: 400px;
+                                               background-image: url(multimedia/imagenes/beneficios.jpg);
+                                               background-attachment: scroll;
+                                               background-repeat: no-repeat;
+                                               background-position: bottom;
+                                               background-size: cover;
+                                               filter: grayscale(50); }
 
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: flex-end;
-                                                    filter: grayscale(50);
-                                                    padding: 20px 15px; }
 
-                                                    .beneficios-img-container h4 { font-size: 1em;
-                                                                                   color: white;
-                                                                                   text-align: center;
-                                                                                   font-weight: bold;
-                                                                                   text-shadow: 0 0 180px #000; }
+@media screen and (max-width: 500px) { .foto2-img-container { height: 300px; } }
 
 
 
-@media screen and (max-width: 500px) { .beneficios-img-container { height: 300px; } }
+
+/*Codigo seccion pasos*/
+
+.pasos-container { width: 100%;
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   align-items: center;
+                   padding: 20px 15px;
+                   font-size: 20px; }
+
+                   .pasos-tittle-container { font-size: 1em;
+                   	                         color: #400;
+                                             text-align: center;
+                                             font-weight: bold;
+                                             font-family: "Montserrat","Open Sans",sans-serif;
+                                             margin-bottom: 20px;
+                                             padding-bottom: 10px;
+                                             border-bottom: 1px solid #222; }
+
+                    .pasos-content { width: 100%;
+                                     display: grid;
+                                     grid-template-columns: repeat(3,1fr);
+                                     grid-template-rows: repeat(1,max-content);
+                                     grid-gap: 20px; }
+
+                                     .pasos-fases-container { width: 100%;
+                                                              display: flex;
+                                                              flex-direction: column;
+                                                              justify-content: flex-start;
+                                                              align-items: flex-start;
+                                                              padding: 20px;
+                                                              border-top: 1px solid #222;
+                                                              font-size: 20px;
+                                                              list-style-type: unset; }
+
+                                                              .pasos-fases-container h4 { font-size: .9em;
+                                                                                          font-weight: bold;
+                                                                                          font-family: "Montserrat","Open Sans",sans-serif;
+                                                                                          text-align: left;
+                                                                                          margin-bottom: 20px; }
+
+                                                               .pasos-fases-container li { font-size: .8em;
+                                                                                           color: #222;
+                                                                                           font-family: "Open Sans",sans-serif;
+                                                                                           font-weight: 500;
+                                                                                           margin-bottom: 10px;
+                                                                                           text-align: left; }
+
+@media screen and (max-width: 800px) { .pasos-content { grid-template-columns: repeat(2,1fr);
+                                                        grid-template-rows: repeat(2,max-content); }
+
+                                       .pasos-fases-container:nth-child(3) { grid-column: 1/ span 2; } }
+
+@media screen and (max-width: 610px) { .pasos-content { grid-template-columns: repeat(1,1fr);
+                                                        grid-template-rows: repeat(3,max-content); }
+
+                                       .pasos-fases-container:nth-child(3) { grid-column: unset; } }
