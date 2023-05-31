@@ -149,14 +149,8 @@ ul { list-style-type: none; }
                    align-items: center;
                    padding: 20px 0px; }
 
-                        .foto2-img-container { width: 100%;
-                        	                   height: 400px;
-                                               background-image: url(multimedia/imagenes/beneficios.jpg);
-                                               background-attachment: scroll;
-                                               background-repeat: no-repeat;
-                                               background-position: bottom;
-                                               background-size: cover;
-                                               filter: grayscale(50); }
+                   .foto2-container img { width: 100%;
+                                          filter: grayscale(1); }
 
 
 @media screen and (max-width: 500px) { .foto2-img-container { height: 300px; } }
