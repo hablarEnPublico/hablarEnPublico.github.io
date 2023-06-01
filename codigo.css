@@ -215,3 +215,59 @@ ul { list-style-type: none; }
                                                         grid-template-rows: repeat(3,max-content); }
 
                                        .pasos-fases-container:nth-child(3) { grid-column: unset; } }
+
+
+
+/* Codigo seccion MAPA*/
+
+.mapa-container { width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  align-items: flex-start;
+                  padding: 20px 15px; }
+
+                  .mapa-img-container { width: 50%; }
+
+                                       .mapa-img { width: 100%;
+                                                   filter: grayscale(.5); }
+
+                  .mapa-content { width: 50%;
+                                  display: flex;
+                                  flex-direction: column;
+                                  justify-content: flex-start;
+                                  align-items: flex-start;
+                                  font-size: 20px;
+                                  padding: 0px 15px; }
+
+                                  .mapa-content h4 { font-size: 1.5em;
+                                                     font-family: "Montserrat","Open Sans",sans-serif;
+                                                     font-weight: bold;
+                                                     margin-bottom: 20px;
+                                                     text-align: left;
+                                                     color: #222; }
+
+
+                                  .mapa-content h5 { font-size: 2em;
+                                                     font-weight: bold;
+                                                     text-align: left;
+                                                     margin-bottom: 10px; }
+
+                                  .mapa-content span { font-size: 1.3em;
+                                                       color: #400;
+                                                       font-weight: bold;
+                                                       text-align: left; }
+
+@media screen and (max-width: 924px) { .mapa-content h4 { font-size: 1.3em; }
+                                       .mapa-content h5 { font-size: 1.8em; }
+                                       .mapa-content span { font-size: 1.1em; } }
+
+@media screen and (max-width: 681px) { .mapa-content h4 { font-size: 1.31em; }
+                                       .mapa-content h5 { font-size: 1.6em; }
+                                       .mapa-content span { font-size: .9em; } }
+
+@media screen and (max-width: 634px)  { .mapa-container { flex-direction: column;
+                                                          padding: 0; }
+                                        .mapa-img-container { width: 100%;
+                                                              margin-bottom: 10px; }
+                                        .mapa-content { width: 100%; } }
