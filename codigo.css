@@ -102,7 +102,6 @@ ul { list-style-type: none; }
 
 
 
-
 /* Codigo seccion mejoras*/
 
 .mejoras-container { width: 100%;
@@ -140,20 +139,45 @@ ul { list-style-type: none; }
 
 
 
-/* codigo seccion foto 2*/
 
-.foto2-container { width: 100%;
-                   display: flex;
-                   flex-direction: column;
-                   justify-content: center;
-                   align-items: center;
-                   padding: 20px 0px; }
+/* Codigo seccion problemas*/
 
-                   .foto2-container img { width: 100%;
-                                          filter: grayscale(1); }
+.problemas-container { width: 80%;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: flex-start;
+                       align-items: flex-start;
+                       padding: 20px 15px;
+                       font-size: 20px;
+                       border: 2px solid #222;
+                       margin: 40px auto; }
+
+                       .problemas-container h4 { font-size: 1em;
+                                                 font-weight: bold;
+                                                 text-align: left;
+                                                 margin-bottom: 20px; }
+
+                       .problemas-container p { font-size: .8em;
+                                                color: #222;
+                                                font-family: "Open Sans",sans-serif;
+                                                text-align: left; }
 
 
-@media screen and (max-width: 500px) { .foto2-img-container { height: 300px; } }
+
+/* codigo seccion liberemos*/
+
+.liberemos-container { width: 100%;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       padding: 20px 0px; }
+
+                   .liberemos-container img { width: 100%;
+                                              filter: grayscale(1); }
+
+
+@media screen and (max-width: 500px) { .liberemos-img-container { height: 300px; } }
 
 
 
