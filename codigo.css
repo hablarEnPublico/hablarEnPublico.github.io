@@ -162,6 +162,33 @@ ul { list-style-type: none; }
                                                 font-family: "Open Sans",sans-serif;
                                                 text-align: left; }
 
+@media screen and (max-width: 500px) { .problemas-container { width: 85%; } }
+
+
+
+/* Codigo seccion herramienta*/
+
+.herramienta-container { width: 80%;
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: flex-start;
+                         align-items: flex-start;
+                         padding: 20px 15px;
+                         font-size: 20px;
+                         border: 2px solid #222;
+                         margin: 40px auto; }
+
+                       .herramienta-container h4 { font-size: 1em;
+                                                   font-weight: bold;
+                                                   text-align: left;
+                                                   margin-bottom: 20px; }
+
+                       .herramienta-container p { font-size: .8em;
+                                                  color: #222;
+                                                  font-family: "Open Sans",sans-serif;
+                                                  text-align: left; }
+
+@media screen and (max-width: 500px) { .herramienta-container { width: 85%; } }
 
 
 /* codigo seccion liberemos*/
