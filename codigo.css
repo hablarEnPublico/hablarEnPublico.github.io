@@ -66,7 +66,7 @@ ul { list-style-type: none; }
                                   .main-content span { font-size: 1.3em;
                                                        color: #400;
                                                        font-weight: 600;
-                                                       margin-bottom: 5px; }
+                                                       margin-bottom: 10px; }
 
                                   .main-content p { font-size: .8em;
                                                     color: #222;
@@ -269,52 +269,68 @@ ul { list-style-type: none; }
 
 
 
-/* Codigo seccion MAPA*/
 
-.mapa-container { width: 100%;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center;
-                  align-items: center;
-                  padding: 20px 15px; }
 
-                  .mapa-img-container { width: 50%; }
+/* Codigo seccion prueba social*/
 
-                                       .mapa-img { width: 100%;
-                                                   filter: grayscale(.5); }
+.prueba-container { width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 15px;
+                    font-size: 20px;
+                    border: 1px solid #ccc; }
 
-                  .mapa-content { width: 50%;
-                                  display: flex;
-                                  flex-direction: column;
-                                  justify-content: center;
-                                  align-items: flex-start;
-                                  font-size: 20px;
-                                  padding: 0px 15px; }
+                    .prueba-container h4 { font-size: 1.2em;
+                                           font-weight: bold;
+                                           text-align: left;
+                                           align-self: flex-start;
+                                           margin-bottom: 20px; }
 
-                                  .mapa-content h5 { font-size: 2em;
-                                                     font-weight: bold;
-                                                     text-align: left;
-                                                     margin-bottom: 10px; }
+                    .prueba-slider { width: 100%;
+                                     display: flex;
+                                     justify-content: center;
+                                     align-items: center;
+                                     border: 1px solid black; }
 
-                                  .mapa-content span { font-size: 1.3em;
-                                                       color: #400;
-                                                       font-weight: bold;
-                                                       text-align: left; }
+                                     .prueba-left-container { width: 10%;
+                                                              display: flex;
+                                                              justify-content: center;
+                                                              align-items: center; }
 
-@media screen and (max-width: 924px) { .mapa-content h4 { font-size: 1.3em; }
-                                       .mapa-content h5 { font-size: 1.8em; }
-                                       .mapa-content span { font-size: 1.1em; } }
+                                                              .prueba-left { cursor: pointer; }
 
-@media screen and (max-width: 681px) { .mapa-content h4 { font-size: 1.31em; }
-                                       .mapa-content h5 { font-size: 1.6em; }
-                                       .mapa-content span { font-size: .9em; } }
+                                     .prueba-slider-content { width: 80%;
+                                                              display: flex;
+                                                              flex-direction: column;
+                                                              justify-content: center;
+                                                              align-items: flex-start;
+                                                              font-size: 20px;
+                                                              font-family: "Open Sans",sans-serif;
+                                                              padding: 20px 15px; }
 
-@media screen and (max-width: 634px)  { .mapa-container { flex-direction: column;
-                                                          padding: 0; }
-                                        .mapa-img-container { width: 100%;
-                                                              margin-bottom: 10px; }
-                                        .mapa-content { width: 100%;
-                                                        align-items: center; }
+                                                              .prueba-slider-estrellas { width: 100%;
+                                                                                         display: flex;
+                                                                                         justify-content: flex-start;
+                                                                                         align-items: center;
+                                                                                         margin-bottom: 5px; }
 
-                                                        .mapa-content h5 { text-align: center; }
-                                                        .mapa-content span { text-align: center; } }
+                                                                                         .prueba-estrellas { transform: scale(.8); }
+
+                                                              .prueba-slider-comentario { font-size: .8em;
+                                                                                          color: #222;
+                                                                                          text-align: left;
+                                                                                          margin-bottom: 15px; }
+
+                                                              .prueba-slider-nombre { font-size: .9em;
+                                                                                      text-align: left;
+                                                                                      font-weight: bold:; }
+
+                                      .prueba-derecha-container { width: 10%;
+                                                                  display: flex;
+                                                                  justify-content: center;
+                                                                  align-items: center; }
+
+                                                                  .prueba-derecha { cursor: pointer; }
+       
