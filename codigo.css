@@ -292,7 +292,9 @@ ul { list-style-type: none; }
                                      display: flex;
                                      justify-content: center;
                                      align-items: center;
-                                     border: 1px solid black; }
+                                     border: 1px solid #ccc;
+                                     overflow: hidden;
+                                     transition: all .2s ease-in-out; }
 
                                      .prueba-left-container { width: 10%;
                                                               display: flex;
@@ -301,6 +303,9 @@ ul { list-style-type: none; }
 
                                                               .prueba-left { cursor: pointer; }
 
+                                                              .prueba-left-disable { cursor: default;
+                                                                                     opacity: .3; }
+
                                      .prueba-slider-content { width: 80%;
                                                               display: flex;
                                                               flex-direction: column;
@@ -308,7 +313,10 @@ ul { list-style-type: none; }
                                                               align-items: flex-start;
                                                               font-size: 20px;
                                                               font-family: "Open Sans",sans-serif;
-                                                              padding: 20px 15px; }
+                                                              padding: 20px 15px;
+                                                              transition: opacity .2s ease-in-out, transform .2s ease-in-out; }
+
+                                                              .prueba-slider-content-change { opacity: 0;  }
 
                                                               .prueba-slider-estrellas { width: 100%;
                                                                                          display: flex;
@@ -319,13 +327,14 @@ ul { list-style-type: none; }
                                                                                          .prueba-estrellas { transform: scale(.8); }
 
                                                               .prueba-slider-comentario { font-size: .8em;
-                                                                                          color: #222;
+                                                                                          color: #444;
                                                                                           text-align: left;
                                                                                           margin-bottom: 15px; }
 
-                                                              .prueba-slider-nombre { font-size: .9em;
+                                                              .prueba-slider-nombre { font-size: .77em;
                                                                                       text-align: left;
-                                                                                      font-weight: bold:; }
+                                                                                      font-weight: bold:;
+                                                                                      color: #1239; }
 
                                       .prueba-derecha-container { width: 10%;
                                                                   display: flex;
@@ -333,4 +342,7 @@ ul { list-style-type: none; }
                                                                   align-items: center; }
 
                                                                   .prueba-derecha { cursor: pointer; }
+
+                                                                  .prueba-derecha-disable { cursor: default;
+                                                                                            opacity: .3; }
        
