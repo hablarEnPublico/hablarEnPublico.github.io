@@ -35,3 +35,10 @@ prueba_derecha.addEventListener("click", ()=>{  if(position < 4) { prueba_slider
                                                                                     prueba_slider_nombre.textContent = nombres[position];
                                                                    	                prueba_slider_content.classList.remove("prueba-slider-content-change"); },250); }  });
 
+
+
+
+//  Codigo seccion boton de compra
+const precio_comprar = document.querySelector(".precio-comprar");
+
+precio_comprar.addEventListener("click", ()=>{ window.open("https://go.hotmart.com/K81069854S?ap=8c44");  });
