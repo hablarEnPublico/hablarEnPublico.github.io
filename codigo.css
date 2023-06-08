@@ -509,7 +509,7 @@ ul { list-style-type: none; }
                                                           padding: 20px;
                                                           outline: none;
                                                           border: none;
-                                                          font-size: .9;
+                                                          font-size: .7em;
                                                           color: white;
                                                           font-weight: 600;
                                                           cursor: pointer; }
@@ -544,6 +544,7 @@ ul { list-style-type: none; }
                                       margin-top: 20px;
                                       background: #141E3099;
                                       background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/foto1.jpg);
+                                      filter: grayscale(1);
 
                                       background-position: bottom;
                                       background-size: cover;
@@ -588,6 +589,16 @@ ul { list-style-type: none; }
                                                                                              font-weight: bold;
                                                                                              text-align: left;
                                                                                              margin-bottom: 20px; }
+
+                                                                    .precio-content2-comprar { font-size: .7em; 
+                                                                                               margin-top: 15px;
+                                                                                               background-color: white;
+                                                                                               padding: 20px;
+                                                                                               width: max-content;
+                                                                                               font-weight: 600;
+                                                                                               text-align: center;
+                                                                                               border: none;
+                                                                                               outline: none; }
                              
                                       .precio-content2-img { width: 30%;
                                                              filter: drop-shadow(0 0 30px white); }
@@ -607,9 +618,12 @@ ul { list-style-type: none; }
                                                                     .precio-content2-3,
                                                                     .precio-content2-4,
                                                                     .precio-content2-precio { text-align: center; }
-                                       .precio-content2-img { width: 50%; } }
 
-@media screen and (max-width: 710px) { .precio-content2 { transform: scale(1.1);
-                                                          margin: 60px 0px;  } }
+                                                                    .precio-content2-comprar { width: 50%; }
+                                       .precio-content2-img { width: 50%;
+                                                              margin-top: 20px; } }
 
-@media screen and (max-width: 520px) { .precio-content2-container { width: 90%; } }
+/*@media screen and (max-width: 710px) { .precio-content2 { margin: 60px 0px;  } }*/
+
+@media screen and (max-width: 520px) { .precio-content2-container { width: 100%; }
+                                       .precio-content2-img { filter: drop-shadow(0 50px 25px white); } }
