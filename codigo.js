@@ -42,3 +42,14 @@ prueba_derecha.addEventListener("click", ()=>{  if(position < 4) { prueba_slider
 const precio_comprar = document.querySelector(".precio-comprar");
 
 precio_comprar.addEventListener("click", ()=>{ window.open("https://go.hotmart.com/K81069854S?ap=8c44");  });
+
+
+// Codigo seccion precio-contenido-extra
+const precio_contenido_extra = document.querySelector(".precio-contenido-extra");
+const precio_content2_agregar = document.querySelector(".precio-content2-agregar");
+let agregado = false;
+
+precio_content2_agregar.addEventListener("click",  ()=>{ if(agregado == false){ precio_content2_agregar.style.backgroundColor = "green";
+                                                                                precio_content2_agregar.textContent = "Agregado";
+                                                                                precio_content2_agregar.style.color = "white";
+                                                                                precio_contenido_extra.classList.add("precio-contenido-extra-active");  }   });

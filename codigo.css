@@ -151,7 +151,7 @@ ul { list-style-type: none; }
                        border: 2px solid #222;
                        margin: 40px auto; }
 
-                       .problemas-container h4 { font-size: 1em;
+                       .problemas-container h4 { font-size: 1.5em;
                                                  font-weight: bold;
                                                  text-align: left;
                                                  margin-bottom: 20px; }
@@ -177,15 +177,26 @@ ul { list-style-type: none; }
                          border: 2px solid #222;
                          margin: 40px auto; }
 
-                       .herramienta-container h4 { font-size: 1em;
+                       .herramienta-container h4 { font-size: 1.5em;
                                                    font-weight: bold;
                                                    text-align: left;
                                                    margin-bottom: 20px; }
 
-                       .herramienta-container p { font-size: .8em;
-                                                  color: #222;
-                                                  font-family: "Open Sans",sans-serif;
-                                                  text-align: left; }
+                       .herramienta-container ul { width: 100%;
+                                                   padding: 20px;
+                                                   display: flex;
+                                                   flex-direction: column;
+                                                   justify-content: flex-start;
+                                                   align-items: flex-start;
+                                                   font-size: 20px;
+                                                   list-style-type: unset; }
+
+                                                   .herramienta-container ul li { font-size: .8em;
+                                                                                   font-family: "Open Sans",sans-serif;
+                                                                                   color: #222;
+                                                                                   text-align: left;
+                                                                                   margin-bottom: 10px; }
+
 
 @media screen and (max-width: 500px) { .herramienta-container { width: 85%; } }
 
@@ -538,13 +549,20 @@ ul { list-style-type: none; }
                                                                                                                  text-align: left;
                                                                                                                  font-weight: normal; }
 
+                                                                      .precio-contenido-extra { display: none; }
+
+                                                                                                .precio-contenido-extra img { filter: grayscale(0); }
+                                                                                                .precio-contenido-extra h4 { color: green;
+                                                                                                                             font-weight: 500; }
+
+                                                                       .precio-contenido-extra-active { display: flex; }
+
                    .precio-content2 { width: 100%;
                                       padding: 20px 15px;
                                       padding-top: 50px;
                                       margin-top: 20px;
                                       background: #141E3099;
                                       background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/foto1.jpg);
-                                      filter: grayscale(1);
 
                                       background-position: bottom;
                                       background-size: cover;
@@ -590,15 +608,16 @@ ul { list-style-type: none; }
                                                                                              text-align: left;
                                                                                              margin-bottom: 20px; }
 
-                                                                    .precio-content2-comprar { font-size: .7em; 
+                                                                    .precio-content2-agregar { font-size: .7em; 
                                                                                                margin-top: 15px;
                                                                                                background-color: white;
                                                                                                padding: 20px;
-                                                                                               width: max-content;
+                                                                                               width: 40%;
                                                                                                font-weight: 600;
                                                                                                text-align: center;
                                                                                                border: none;
-                                                                                               outline: none; }
+                                                                                               outline: none;
+                                                                                               cursor: pointer; }
                              
                                       .precio-content2-img { width: 30%;
                                                              filter: drop-shadow(0 0 30px white); }
@@ -619,7 +638,7 @@ ul { list-style-type: none; }
                                                                     .precio-content2-4,
                                                                     .precio-content2-precio { text-align: center; }
 
-                                                                    .precio-content2-comprar { width: 50%; }
+                                                                    .precio-content2-agregar { width: 50%; }
                                        .precio-content2-img { width: 50%;
                                                               margin-top: 20px; } }
 
