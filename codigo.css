@@ -360,6 +360,47 @@ ul { list-style-type: none; }
                                                                              font-weight: 500; }
 
 
+/* Codigo seccion conclusion*/
+
+.conclusion-container { width: 100%;
+                        padding: 20px 15px;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-top: 1px solid #000;
+                        margin: 40px 0px;
+                        margin-top: 60px;
+
+                        font-size: 20px; }
+
+                        .conclusion-container span { font-size: 1.2em;
+                                                     font-weight: 500;
+                                                     text-align: center;
+                                                     margin-bottom: 15px;
+                                                     color: #222; }
+
+                        .conclusion-container h4 { font-size: 1.5em;
+                                                   font-weight: bold;
+                                                   margin-bottom: 20px;
+                                                   text-align: center;
+                                                   color: #761500; }
+
+                        .conclusion-container p { font-size: .8em;
+                                                  color: #222;
+                                                  font-family: "Open Sans",sans-serif;
+                                                  text-align: center;
+                                                  width: 60%;
+                                                  border-bottom: 1px solid #000;
+                                                  padding-bottom: 20px; }
+
+
+@media screen and (max-width: 940px) { .conclusion-container p {width: 80%;} }
+@media screen and (max-width: 700px) { .conclusion-container p {width: 90%;} }
+@media screen and (max-width: 450px) { .conclusion-container p {width: 95%;} }
+
+
 
 
 
@@ -403,19 +444,19 @@ ul { list-style-type: none; }
                                                        justify-content: flex-start;
                                                        align-items: center;
                                                        font-size: 20px;
-                                                       border: 1px solid #333;  }
+                                                       border: 1px solid #000;  }
                                           
                                                        .pasos-img-1 { width: 100%;
                                                                       margin-bottom: 20px;
                                                                       filter: grayscale(1);  }
 
                                                        .pasos-img-2 {  width: 100%;
-                                                                      margin-bottom: 20px;
-                                                                      filter: grayscale(1);  }
+                                                                       margin-bottom: 20px;
+                                                                       filter: grayscale(1); }
 
                                                        .pasos-img-3 {  width: 100%;
-                                                                      margin-bottom: 20px;
-                                                                      filter: grayscale(1); }
+                                                                       margin-bottom: 20px;
+                                                                       filter: grayscale(1); }
 
                                                        .pasos-targetas h4 { font-size: 1em;
                                                                             font-weight: bold;
