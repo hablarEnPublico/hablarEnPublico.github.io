@@ -313,18 +313,45 @@ ul { list-style-type: none; }
                                                    margin-bottom: 20px;
                                                    text-align: center; }
 
-                        .objeciones-container p { font-size: .8em;
-                                                  color: #222;
-                                                  text-align: center;
-                                                  font-family: "Open Sans",sans-serif;
-                                                  font-weight: normal;
-                                                  padding-bottom: 40px;
-                                                  margin-bottom: 20px;
-                                                  border-bottom: 1px solid #000; }
+                        .objeciones-container ul { width: 50%;
+                                                   border: 1px solid #000;
+                                                   padding: 20px 15px;
+                                                   display: flex;
+                                                   flex-direction: column;
+                                                   justify-content: flex-start;
+                                                   align-items: flex-start;
+                                                   font-size: 20px;
+                                                   font-family: "Open Sans",sans-serif;
+                                                   list-style-type: unset; }
+
+                                                   .objeciones-container ul h3  { font-size: 1em;
+                                                                                  font-family: "Open Sans",sans-serif;
+                                                                                  font-weight: bold;
+                                                                                  margin-bottom: 10px;
+                                                                                  text-align: left; }
+
+                                                   .objeciones-container ul p { font-size: .8em;
+                                                                                color: #222;
+                                                                                text-align: left;
+                                                                                font-family: "Open Sans",sans-serif;
+                                                                                font-weight: normal;
+                                                                                margin-bottom: 20px; }
+
+
+                                                   .objeciones-container ul li { font-size: .8em;
+                                                                                 color: #000;
+                                                                                 font-weight: 500;
+                                                                                 margin-bottom: 10px;
+                                                                                 margin-left: 20px; }
+
+
 
 @keyframes flecha_abajo { 0% { transform: translateY(0); }
-                            100% { transform: translateY(40px); } }
+                        100% { transform: translateY(40px); } }
 
+
+@media screen and (max-width: 820px) { .objeciones-container ul  { width: 80%; } }
+@media screen and (max-width: 460px) { .objeciones-container ul  { width: 90%; } }
 
 
 
