@@ -4,7 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif;
+    user-select: none; }
 
 
 body { padding: 40px 260px; }
@@ -437,6 +438,23 @@ ul { list-style-type: none; }
                                                                              font-weight: 500; }
 
 
+
+
+/* Codigo seccion objetivos imagen*/
+
+.objetivos-img-container { width: 100%;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center; }
+
+                           .objetivos-img { width: 80%;
+                                            filter: grayscale(.9);  }
+
+@media screen and (max-width: 480px)  { .objetivos-img { width: 100%; } }
+
+
+
+
 /* Codigo seccion conclusion*/
 
 .conclusion-container { width: 100%;
@@ -448,6 +466,7 @@ ul { list-style-type: none; }
                         align-items: center;
                         border-top: 1px solid #000;
                         margin: 80px 0px;
+                        margin-top: 20px;
 
                         font-size: 20px; }
 
