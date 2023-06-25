@@ -737,7 +737,8 @@ ul { list-style-type: none; }
                     align-items: center;
                     vertical-align: baseline;
                     padding: 20px 15px;
-                    margin: 20px 0px; }
+                    margin: 20px 0px;
+                    margin-bottom: 0; }
 
                     .precio-content { width: 50%;
                                       border: 2px solid #761500;
@@ -786,6 +787,9 @@ ul { list-style-type: none; }
                                                           font-weight: 600;
                                                           cursor: pointer; }
 
+                                        .precio-img { width: 50%;
+                                                      margin: 10px 0px; }
+
                                         .precio-contenido-container { width: 80%;
                                                                       display: flex;
                                                                       flex-direction: column;
@@ -828,6 +832,40 @@ ul { list-style-type: none; }
 
 
 
+/* Codigo seccion garantia*/
+
+.garantia-container  { width: 60%;
+
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+
+                       padding: 20px 15px;
+                       font-size: 20px;
+                       margin: 0px auto;
+                       margin-bottom: 20px;  }
+
+                       .garantia-container img { width: 50%;
+                                                 margin-bottom: 20px; }
+
+                       .garantia-container h5 { font-size: 1.5em;
+                                                color: #222;
+                                                font-weight: bold;
+                                                text-align: center;
+                                                margin-bottom: 20px; }
+
+                        .garantia-container p { font-size: .8em;
+                                                font-family: "Open Sans",sans-serif;
+                                                color: #222;
+                                                text-align: center;  }
+
+@media screen and (max-width: 730px) { .garantia-container { width: 80%; } }
+@media screen and (max-width: 530px) { .garantia-container { width: 100%; }
+                                       .garantia-container img { width: 80%; } }
+
+
+
 
 
 /* Codigo seccion productor*/
@@ -844,10 +882,9 @@ ul { list-style-type: none; }
 
                        .productor-tittle { font-size: 1.5em;
                                            font-weight: bold;
-                                           color: #000;
+                                           color: #222;
                                            margin: 20px 0px;
-                                           text-align: center;
-                                           width: 80%; }
+                                           text-align: center; }
 
                        .productor-content-container { width: 100%;
                                                       display: flex;
@@ -874,10 +911,13 @@ ul { list-style-type: none; }
 
 
 @media screen and (max-width: 830px) { .productor-container { width: 80%; } }
-@media screen and (max-width: 750px) { .productor-tittle { font-size: 1em; } }
+@media screen and (max-width: 750px) { .productor-tittle { font-size: 1.2em; } }
 @media screen and (max-width: 660px) { .productor-content-container { width: 80%; }
                                        .productor-img { width: 100%; } }
 
 @media screen and (max-width: 550px) { .productor-container { width: 95%; } }
 @media screen and (max-width: 500px) { .productor-content-container { width: 100%; } }
+
+
+
 
