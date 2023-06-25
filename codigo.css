@@ -818,134 +818,66 @@ ul { list-style-type: none; }
 
                                                                        .precio-contenido-extra-active { display: flex; }
 
-                   .precio-content2 { width: 100%;
-                                      padding: 20px 15px;
-                                      margin-top: 20px;
-                                      background: #141E3099;
-                                      background: linear-gradient(to top, #000, #141E3099), url(multimedia/imagenes/foto1.jpg);
-
-                                      background-position: bottom;
-                                      background-size: cover;
-                                      background-attachment: scroll;
-                                      background-repeat: no-repeat;
-
-
-                                      display: flex;
-                                      flex-direction: column;
-                                      justify-content: center;
-                                      align-items: center; }
-
-                                      .cronometro-container { width: 100%;
-                                                              display: flex;
-                                                              flex-direction: column;
-                                                              justify-content: center;
-                                                              align-items: center;
-                                                              padding: 0px 15px; }
-                                      
-                                                             .cronometro-content { width: 30%;
-                                                                                   display: grid;
-                                                                                   grid-template-columns: repeat(3,1fr);
-                                                                                   grid-template-rows: repeat(1,150px);
-                                                                                   font-size: 20px; }
-                                     
-                                                                                   .cronometro-valores { width: 100%;
-                                                                                                         border-right: 2px solid #ccc;
-                                                                                                         font-family:"Montserrat","Open Sans",sans-serif;
-                                                                                                         font-size: 2em;
-                                                                                                         font-weight: bold;
-                                                                                                         color: white;
-                                                                                                         text-align: center;
-                                                                                                         margin: auto;
-                                                                                                         padding: 20px;
-                                                                                                         overflow: hidden;
-
-                                                                                                         display: flex;
-                                                                                                         justify-content: center;
-                                                                                                         align-items: center; }
-
-                                                                                   .cronometro-valores:nth-child(3){ border: none; }
-
-
-
-                                      .precio-content2-2 { width: 100%;
-                                                           display: flex;
-                                                           flex-direction: row;
-                                                           justify-content: center;
-                                                           align-items: center; }
-
-                                                           .precio-content2-container { width: max-content;
-                                                                                        display: flex;
-                                                                                        flex-direction: column;
-                                                                                        justify-content: flex-start;
-                                                                                        align-items: flex-start;
-                                														font-size: 20px;
-                                														color: white; }
-                                                  
-                                                                                        .precio-content2-1 { font-size: 1.5em;
-                                                                                                             color: white;
-                                                                                                             font-weight: bold;
-                                                                                                             text-align: left;
-                                                                                                             margin-bottom: 15px; }
-                                                  
-                                                                                        .precio-content2-2 { font-size: 1em;
-                                                                                                             font-weight: 600;
-                                                                                                             text-align: left;
-                                                                                                             margin-bottom: 20px; }
-                                                  
-                                                                                        .precio-content2-3 { font-size: 1.2em;
-                                                                                                             font-weight: bold;
-                                                                                                             margin-bottom: 10px; }
-                                                  
-                                                                                        .precio-content2-4 { font-size: 1em;
-                                                                                                             font-weight: 500;
-                                                                                                             margin-bottom: 10px;
-                                                                                                             text-align: left; }
-                                                  
-                                                                                        .precio-content2-precio { font-size: 1.2em;
-                                                                                                                  font-weight: bold;
-                                                                                                                  text-align: left;
-                                                                                                                  margin-bottom: 20px; }
-                     
-                                                                                         .precio-content2-agregar { font-size: .7em; 
-                                                                                                                    margin-top: 15px;
-                                                                                                                    background-color: white;
-                                                                                                                    padding: 20px;
-                                                                                                                    width: 40%;
-                                                                                                                    font-weight: 600;
-                                                                                                                    text-align: center;
-                                                                                                                    border: none;
-                                                                                                                    outline: none;
-                                                                                                                    cursor: pointer; }
-                                                  
-                                                           .precio-content2-img { width: 30%;
-                                                                                  filter: drop-shadow(0 0 30px white); }
-
-@media screen and (max-width: 1220px) { .cronometro-content { width: 50%; } }
-@media screen and (max-width: 760px) { .cronometro-content { width: 60%; } }
-@media screen and (max-width: 677px) { .cronometro-content { width: 80%; } }
-@media screen and  (max-width: 560px) { .cronometro-content { width: 100%; } }
-@media screen and (max-width: 460px) { .cronometro-valores { font-size: 1.5em; } }
+                   
                              
 @media screen and (max-width: 830px) { .precio-content { width: 80%; } }
 @media screen and (max-width: 555px) { .precio-content{ width: 100%; } }
 @media screen and  (max-width: 420px) { .precio-compra, .precio-contenido-container { width: 90%; } }
 
-@media screen and (max-width: 887px) { .precio-content2-2 { flex-direction: column; }
-                                       .precio-content2-container { width: 80%;
-                                                                    justify-content: center;
-                                                                    align-items: center; }
 
-                                                                    .precio-content2-1,
-                                                                    .precio-content2-2,
-                                                                    .precio-content2-3,
-                                                                    .precio-content2-4,
-                                                                    .precio-content2-precio { text-align: center; }
 
-                                                                    .precio-content2-agregar { width: 50%; }
-                                       .precio-content2-img { width: 50%;
-                                                              margin-top: 20px; } }
 
-/*@media screen and (max-width: 710px) { .precio-content2 { margin: 60px 0px;  } }*/
 
-@media screen and (max-width: 520px) { .precio-content2-container { width: 100%; }
-                                       .precio-content2-img { filter: drop-shadow(0 50px 25px white); } }
+
+
+/* Codigo seccion productor*/
+
+.productor-container { width: 60%;
+	                   border: 2px solid #000;
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       font-size: 20px;
+                       padding: 20px;
+                       margin: 0px auto; }
+
+                       .productor-tittle { font-size: 1.5em;
+                                           font-weight: bold;
+                                           color: #000;
+                                           margin: 20px 0px;
+                                           text-align: center;
+                                           width: 80%; }
+
+                       .productor-content-container { width: 100%;
+                                                      display: flex;
+                                                      flex-direction: column;
+                                                      justify-content: center;
+                                                      align-items: center; }
+
+                                                      .productor-img { width: 80%;
+                                                                       filter: grayscale(.2); }
+
+                                                       .productor-content { width: 100%;
+                                                                            font-size: 20px;
+                                                                            font-family: "Open Sans",sans-serif;
+                                                                            display: flex;
+                                                                            flex-direction: column;
+                                                                            justify-content: center;
+                                                                            align-items: center; }
+
+                                                                            .productor-content p { font-size: .8em;
+                                                                                                   color: #222;
+                                                                                                   text-align: center;
+                                                                                                   margin-bottom: 15px; }
+
+
+
+@media screen and (max-width: 830px) { .productor-container { width: 80%; } }
+@media screen and (max-width: 750px) { .productor-tittle { font-size: 1em; } }
+@media screen and (max-width: 660px) { .productor-content-container { width: 80%; }
+                                       .productor-img { width: 100%; } }
+
+@media screen and (max-width: 550px) { .productor-container { width: 95%; } }
+@media screen and (max-width: 500px) { .productor-content-container { width: 100%; } }
+
