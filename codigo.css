@@ -437,6 +437,7 @@ ul { list-style-type: none; }
                                                                              text-align: left;
                                                                              font-weight: 500; }
 
+@media screen and  (max-width: 390px) { .objetivos-container h4 { font-size: 1.2em; } }
 
 
 
@@ -877,14 +878,14 @@ ul { list-style-type: none; }
                        justify-content: center;
                        align-items: center;
                        font-size: 20px;
-                       padding: 20px;
                        margin: 0px auto; }
 
                        .productor-tittle { font-size: 1.5em;
                                            font-weight: bold;
                                            color: #222;
                                            margin: 20px 0px;
-                                           text-align: center; }
+                                           text-align: center;
+                                           padding: 20px 15px; }
 
                        .productor-content-container { width: 100%;
                                                       display: flex;
@@ -901,12 +902,28 @@ ul { list-style-type: none; }
                                                                             display: flex;
                                                                             flex-direction: column;
                                                                             justify-content: center;
-                                                                            align-items: center; }
+                                                                            align-items: center;
+                                                                            padding: 20px 15px; }
 
                                                                             .productor-content p { font-size: .8em;
                                                                                                    color: #222;
                                                                                                    text-align: center;
                                                                                                    margin-bottom: 15px; }
+
+                                                                            .productor-content ul { width: 100%;
+                                                                                                    display: flex;
+                                                                                                    flex-direction: column;
+                                                                                                    justify-content: center;
+                                                                                                    align-items: center;
+                                                                                                    padding: 20px 0px;
+                                                                                                    font-size: 20px;
+                                                                                                    font-family: "Open Sans",sans-serif; }
+
+                                                                                                    .productor-content ul li { font-size: .8em;
+                                                                                                                               color: #222;
+                                                                                                                               text-align: center;
+                                                                                                                               margin-bottom: 10px;
+                                                                                                                               font-weight: 500; }
 
 
 
