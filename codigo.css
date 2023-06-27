@@ -588,6 +588,89 @@ ul { list-style-type: none; }
 @media screen and (max-width: 495px)  { .pasos-content { width: 100%; } }
 
 
+
+
+
+
+
+
+/* Codigo seccion extras*/
+
+.extras-container { width: 100%;
+                    padding: 20px 15px;
+                    margin-bottom: 20px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px; }
+
+                    .extras-tittle { font-size: 1.2em;
+                                     color: #222;
+                                     font-family: "Open Sans",sans-serif;
+                                     text-align: center;
+                                     font-weight: 500;
+                                     margin-bottom: 15px;  }
+
+                    .extras-subtittle { font-size: 1.5em;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        margin-bottom: 20px;
+                                        padding-bottom: 20px;
+                                        border-bottom: 1px solid #000; }
+
+                    .extras-content { width: 50%;
+                                      display: grid;
+                                      grid-template-columns: repeat(2,1fr);
+                                      grid-template-rows: repeat(1,max-content);
+                                      grid-gap: 20px; }
+
+                                      .extras-content div { width: 100%;
+                                                            border: 2px solid #ccc;
+                                                            padding: 20px 15px;
+                                                            font-size: 20px;
+
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: flex-start;
+                                                            align-items: flex-start; }
+
+                                                            .extras-content img { align-self: center;
+                                                                                  margin-bottom: 20px; }
+
+                                                            .extras-content h4 { font-size: 1em;
+                                                                                 text-align: left;
+                                                                                 font-weight: bold;
+                                                                                 margin-bottom: 20px; }
+
+                                                            .extras-content p { font-size: .8em;
+                                                                                color: #222;
+                                                                                font-family: "Open Sans",sans-serif;
+                                                                                font-weight: 500; }
+
+
+@media screen and (max-width: 1640px) { .extras-content { width: 80%; } }
+@media screen and (max-width: 670px) { .extras-content { width: 100%; } }
+@media screen and (max-width: 550px) { .extras-content { width: 80%;
+	                                                     grid-template-columns: repeat(1,1fr);
+                                                         grid-template-rows: repeat(2,max-content); } }
+
+@media screen and (max-width: 410px) { .extras-content { width: 100%; } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Codigo seccion prueba social*/
 
 .prueba-container { width: 100%;
