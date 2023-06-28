@@ -564,19 +564,28 @@ ul { list-style-type: none; }
                                                                             align-self: flex-start;
                                                                             padding: 0px 15px; }
 
+                                                        .pasos-targetas p { font-size: .8em;
+                                                                            color: #222;
+                                                                            font-family: "Open Sans",sans-serif;
+                                                                            font-weight: 400;
+                                                                            text-align: left;
+                                                                            padding: 20px 15px; }
+
                                                         .pasos-targetas ul { width: 100%;
                                                                              display: flex;
-                                                                             padding: 20px 15px;
+                                                                             padding: 0px 40px;
                                                                              flex-direction: column;
                                                                              justify-content: flex-start;
                                                                              align-items: flex-start;
                                                                              font-size: 20px;
-                                                                             font-family: "Open Sans",sans-serif;   }
+                                                                             font-family: "Open Sans",sans-serif;
+                                                                             list-style-type: unset;
+                                                                             padding-bottom: 20px;  }
 
                                                                              .pasos-targetas ul li { font-size: .77em;
                                                                                                      text-align: left;
                                                                                                      color: #111;
-                                                                                                     margin-bottom: 10px; }
+                                                                                                     margin-bottom: 8px; }
 
 
 @media screen and (max-width: 855px) { .pasos-content { grid-template-columns: repeat(1,1fr);
@@ -627,7 +636,7 @@ ul { list-style-type: none; }
                                       grid-gap: 20px; }
 
                                       .extras-content div { width: 100%;
-                                                            border: 2px solid #ccc;
+                                                            border: 1px solid #ccc;
                                                             padding: 20px 15px;
                                                             font-size: 20px;
 
@@ -656,7 +665,7 @@ ul { list-style-type: none; }
 	                                                     grid-template-columns: repeat(1,1fr);
                                                          grid-template-rows: repeat(2,max-content); } }
 
-@media screen and (max-width: 410px) { .extras-content { width: 100%; } }
+@media screen and (max-width: 390px) { .extras-content { width: 100%; } }
 
 
 
