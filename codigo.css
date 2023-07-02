@@ -407,15 +407,22 @@ ul { list-style-type: none; }
 
 /* Codigo seccion objetivos*/
 
-.objetivos-container { width: 80%;
+.objetivos-container { width: 50%;
                        display: flex;
                        flex-direction: column;
                        justify-content: flex-start;
                        align-items: flex-start;
                        font-size: 20px;
                        border: 2px solid #222;
-                       padding: 20px 15px;
+                       padding: 20px;
                        margin: 20px auto; }
+
+                       .objetivos-container span { font-size: 1em;
+                                                   color: #222;
+                                                   font-family: "Open Sans",sans-serif;
+                                                   text-align: left;
+                                                   margin-bottom: 20px;
+                                                   font-weight: 500; }
 
                        .objetivos-container h4 { font-size: 1.5em;
                                                  font-weight: bold;
@@ -438,6 +445,7 @@ ul { list-style-type: none; }
                                                                              font-weight: 500; }
 
 @media screen and  (max-width: 390px) { .objetivos-container h4 { font-size: 1.2em; } }
+@media screen and  (max-width: 720px) { .objetivos-container { width: 80%; } }
 
 
 
@@ -636,9 +644,7 @@ ul { list-style-type: none; }
                                       grid-gap: 20px; }
 
                                       .extras-content div { width: 100%;
-                                                            border: 1px solid #ccc;
-                                                            border-top: 2px solid #444;
-                                                            border-bottom: 2px solid #444;
+                                                            border: 1px solid #761500;
                                                             padding: 20px 15px;
                                                             font-size: 20px;
 
@@ -665,9 +671,10 @@ ul { list-style-type: none; }
 @media screen and (max-width: 670px) { .extras-content { width: 100%; } }
 @media screen and (max-width: 550px) { .extras-content { width: 80%;
 	                                                     grid-template-columns: repeat(1,1fr);
-                                                         grid-template-rows: repeat(2,max-content); } }
+                                                         grid-template-rows: repeat(2,max-content); }
+                                       .extras-content p  { font-size: .77em; } }
 
-@media screen and (max-width: 390px) { .extras-content { width: 100%; } }
+@media screen and (max-width: 350px) { .extras-content  { width: 100%; } }
 
 
 
@@ -909,14 +916,6 @@ ul { list-style-type: none; }
                                                                                                                  text-align: left;
                                                                                                                  font-weight: normal; }
 
-                                                                      .precio-contenido-extra { display: none; }
-
-                                                                                                .precio-contenido-extra img { filter: grayscale(0); }
-                                                                                                .precio-contenido-extra h4 { color: green;
-                                                                                                                             font-weight: 500; }
-
-                                                                       .precio-contenido-extra-active { display: flex; }
-
                    
                              
 @media screen and (max-width: 830px) { .precio-content { width: 80%; } }
@@ -1032,3 +1031,19 @@ ul { list-style-type: none; }
 
 
 
+
+
+/* Codigo seccion footer*/
+
+.footer { display: flex;
+          width: 100%;
+          height: 40vh;
+          justify-content: center;
+          align-items: center;
+          font-family: "Open Sans",sans-serif;
+          font-size: 20px;
+          margin-top: 20px; }
+
+         .footer h4 { font-size: .7em;
+                      color: #222;
+                      font-weight: normal; }
