@@ -428,6 +428,13 @@ ul { list-style-type: none; }
                                                  font-weight: bold;
                                                  margin-bottom: 20px; }
 
+                       .objetivos-container p { font-size: .8em;
+                                                color: #000;
+                                                font-family: "Open Sans",sans-serif;
+                                                font-weight: 500;
+                                                text-align: left;
+                                                margin-bottom: 20px; }
+
                        .objetivos-container ul { width: 100%;
                                                  display: flex;
                                                  flex-direction: column;
@@ -776,7 +783,7 @@ ul { list-style-type: none; }
                     font-size: 20px;
                     margin-top: 80px; }
 
-                    .oferta-tittle { font-size: 1.2em;
+                    .oferta-tittle { font-size: 1.5em;
                                      font-weight: bold;
                                      text-align: left;
                                      margin-bottom: 60px; }
@@ -874,7 +881,14 @@ ul { list-style-type: none; }
 
                                         .precio-garantia { font-size: 1.2em;
                                                            font-family: "Open Sans",sans-serif;
-                                                           margin-bottom: 20px; }
+                                                           margin-bottom: 15px; }
+
+                                       .precio-recibe { font-size: .8em;
+                                                        color: #000;
+                                                        text-align: center;
+                                                        margin-bottom: 20px;
+                                                        font-family: "Open Sans",sans-serif;
+                                                        font-weight: normal; }
 
                                         .precio-comprar { width: 80%;
                                                           display: flex;
@@ -1044,6 +1058,6 @@ ul { list-style-type: none; }
           font-size: 20px;
           margin-top: 20px; }
 
-         .footer h4 { font-size: .7em;
+         .footer h4 { font-size: .6em;
                       color: #222;
                       font-weight: normal; }
