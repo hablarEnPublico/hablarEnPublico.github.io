@@ -308,9 +308,9 @@ ul { list-style-type: none; }
                                                       margin-bottom: 15px; }
                         
                         .objeciones-container h5 { font-size: 1em;
-                                                   color: #761500;
+                                                   color: #000;
                                                    font-family: "Open Sans",sans-serif;
-                                                   font-weight: 500;
+                                                   font-weight: 600;
                                                    margin-bottom: 20px;
                                                    text-align: center; }
 
@@ -1052,11 +1052,23 @@ ul { list-style-type: none; }
 .footer { display: flex;
           width: 100%;
           height: 40vh;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           font-family: "Open Sans",sans-serif;
           font-size: 20px;
           margin-top: 20px; }
+
+         .footer img { width: 40px;
+                       filter: grayscale(1);
+                       margin-bottom: 40px; }
+
+         .footer h2 { font-size: .8em;
+                      color: #222;
+                      font-family: "Montserrat","Open Sans"sans-serif;
+                      font-weight: 600;
+                      text-align: center;
+                      margin-bottom: 8px; }
 
          .footer h4 { font-size: .6em;
                       color: #222;
