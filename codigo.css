@@ -753,7 +753,7 @@ ul { list-style-type: none; }
 
 /* Codigo seccion prueba social*/
 
-.prueba-container { width: 100%;
+/*.prueba-container { width: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -824,7 +824,7 @@ ul { list-style-type: none; }
 
                                                                   .prueba-derecha-disable { cursor: default;
                                                                                             opacity: .3; }
-       
+       */
 
 
 /* Codigo seccion oferta*/
