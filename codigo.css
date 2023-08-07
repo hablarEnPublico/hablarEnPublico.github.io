@@ -306,6 +306,12 @@ ul { list-style-type: none; }
                                                       font-weight: bold;
                                                       text-align: center;
                                                       margin-bottom: 15px; }
+
+                        .objeciones-container h3 { font-size: 1.2em;
+                                                   font-weight: 500;
+                                                   color: #761500;
+                                                   text-align: center;
+                                                   margin-bottom: 10px; }
                         
                         .objeciones-container h5 { font-size: 1em;
                                                    color: #000;
