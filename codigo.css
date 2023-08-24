@@ -296,6 +296,12 @@ ul { list-style-type: none; }
                         padding: 40px 15px;
                         border-top: 1px solid #000; }
 
+                        .objeciones-container p { font-size: 1em;
+                                                  font-family: "Open Sans",sans-serif;
+                                                  font-weight: 500;
+                                                  text-align: center;
+                                                  margin-bottom: 20px; }
+
                         .objeciones-container h4 { font-size: 1.2em;
                                                    color:#333;
                                                    font-weight: 500;
@@ -305,20 +311,8 @@ ul { list-style-type: none; }
                          .objeciones-container span { font-size: 1.5em;
                                                       font-weight: bold;
                                                       text-align: center;
-                                                      margin-bottom: 15px; }
-
-                        .objeciones-container h3 { font-size: 1.2em;
-                                                   font-weight: 500;
-                                                   color: #761500;
-                                                   text-align: center;
-                                                   margin-bottom: 10px; }
-                        
-                        .objeciones-container h5 { font-size: 1em;
-                                                   color: #000;
-                                                   font-family: "Open Sans",sans-serif;
-                                                   font-weight: 600;
-                                                   margin-bottom: 20px;
-                                                   text-align: center; }
+                                                      margin-bottom: 15px;
+                                                      width: 80%; }
 
                         .objeciones-container ul { width: 50%;
                                                    border: 1px solid #000;
@@ -357,7 +351,8 @@ ul { list-style-type: none; }
                         100% { transform: translateY(40px); } }
 
 
-@media screen and (max-width: 820px) { .objeciones-container ul  { width: 80%; } }
+@media screen and (max-width: 820px) { .objeciones-container ul  { width: 80%; }
+                                       .objeciones-container span { width: 100%; } }
 @media screen and (max-width: 460px) { .objeciones-container ul  { width: 90%; } }
 
 
@@ -365,7 +360,7 @@ ul { list-style-type: none; }
 /* Codigo seccion beneficios*/
 
 .beneficios-container { width: 100%;
-                        padding: 20px 15px;
+                        padding: 20px 0px;
 
                         display: flex;
                         flex-direction: column;
@@ -374,27 +369,33 @@ ul { list-style-type: none; }
                         font-size: 20px;
                         margin-bottom: 40px; }
 
+                        .beneficios-container img { width: 80%;
+                                                    margin-bottom: 20px;
+                                                    filter: grayscale(.8); }
+
                         .beneficios-container h4 { font-size: 1.2em;
                                                    color: #222;
                                                    font-weight: 500;
                                                    text-align: center;
-                                                   margin-bottom: 15px; }
+                                                   margin-bottom: 15px;
+                                                   padding: 0px 15px; }
 
                         .beneficios-container span { font-size: 1.5em; 
                                                      color: #000; 
                                                      text-align: center;
                                                      margin-bottom: 15px;
                                                      font-weight: bold;
-                                                     padding-bottom: 20px;
-                                                     border-bottom: 1px solid #000; }
+                                                     padding: 0px 15px;
+                                                     padding-bottom: 20px; }
 
                         .beneficios-container p { font-size: .8em;
                                                   font-weight: 500;
                                                   font-family: "Open Sans",sans-serif;
                                                   text-align: center;
-                                                  margin-bottom: 20px; }
+                                                  margin-bottom: 20px;
+                                                  padding: 0px 15px; }
 
-                       
+@media screen and (max-width: 820px) { .beneficios-container img { width: 100%; } }
 
 
 /* Codigo seccion beneficios 2*/
@@ -537,7 +538,6 @@ ul { list-style-type: none; }
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        border-top: 1px solid #000;
                         margin: 80px 0px;
                         margin-top: 20px;
 
@@ -549,11 +549,18 @@ ul { list-style-type: none; }
                                                      margin-bottom: 15px;
                                                      color: #222; }
 
-                        .conclusion-container h4 { font-size: 1.5em;
-                                                   font-weight: bold;
+                        .conclusion-container h4 { font-size: 1em;
+                                                   font-weight: 600;
                                                    margin-bottom: 20px;
                                                    text-align: center;
                                                    color: #761500; }
+                      
+                        .conclusion-container h5 { font-size: 1.2em;
+                                                   font-weight: 500;
+                                                   text-align: center;
+                                                   margin-bottom: 20px;
+                                                   color: #222; }
+
 
                         .conclusion-container p { font-size: .8em;
                                                   color: #222;
