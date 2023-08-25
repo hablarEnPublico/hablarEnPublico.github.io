@@ -98,7 +98,7 @@ ul { list-style-type: none; }
                                        .main-img-container { width: 100%; }
 
                                        .main-content h4 { font-size: 1.3em; }
-                                       .main-content h3 { font-size: 1.8em; }
+                                       .main-content h3 { font-size: 1.77em; }
                                        .main-content span { font-size: 1em; } }
 
 
@@ -713,10 +713,9 @@ ul { list-style-type: none; }
                                         border-bottom: 1px solid #000; }
 
                     .extras-content { width: 50%;
-                                      display: grid;
-                                      grid-template-columns: repeat(2,1fr);
-                                      grid-template-rows: repeat(1,max-content);
-                                      grid-gap: 20px; }
+                                      display: flex;
+                                      justify-content: center;
+                                      align-items: center; }
 
                                       .extras-content div { width: 100%;
                                                             border: 1px solid #761500;
