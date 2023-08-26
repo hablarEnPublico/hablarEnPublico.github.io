@@ -710,7 +710,7 @@ ul { list-style-type: none; }
                                         font-weight: bold;
                                         margin-bottom: 20px;
                                         padding-bottom: 20px;
-                                        border-bottom: 1px solid #000; }
+                                        border-bottom: 1px solid #111; }
 
                     .extras-content { width: 50%;
                                       display: flex;
@@ -765,78 +765,44 @@ ul { list-style-type: none; }
 
 /* Codigo seccion prueba social*/
 
-/*.prueba-container { width: 100%;
+.social-container { width: 60%;
+	                margin: 0px auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     padding: 20px 15px;
-                    font-size: 20px;
-                    border: 1px solid #ccc; }
+                    font-size: 20px; }
 
-                    .prueba-container h4 { font-size: 1.2em;
-                                           font-weight: bold;
-                                           text-align: left;
-                                           align-self: flex-start;
-                                           margin-bottom: 20px; }
+                    .social-tittle { font-size: 1.2em;
+                                     color: #111;
+                                     font-weight: 600;
+                                     text-align: center;
+                                     margin-bottom: 15px; }
 
-                    .prueba-slider { width: 100%;
-                                     display: flex;
-                                     justify-content: center;
-                                     align-items: center;
-                                     overflow: hidden;
-                                     transition: all 1s ease-in-out; }
+                    .social-container p { font-size: .7em;
+                                          color: #222;
+                                          font-family: "Open Sans",sans-serif;
+                                          text-align: center;
+                                          margin-bottom: 20px; }
 
-                                     .prueba-left-container { width: 10%;
-                                                              display: flex;
-                                                              justify-content: center;
-                                                              align-items: center; }
+                    .social-content-container { width: 100%;
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                align-items: center; }
 
-                                                              .prueba-left { cursor: pointer; }
+                                                .social-content-container img { border: 1px solid #ccc;
+                                                                                margin-bottom: 5px;
+                                                                                width: 100%;
+                                                                                transition: border .2s ease-in-out; }
 
-                                                              .prueba-left-disable { cursor: default;
-                                                                                     opacity: .3; }
+                                                                                .social-content-container img:hover { border: 1px solid green; }
 
-                                     .prueba-slider-content { width: 80%;
-                                                              display: flex;
-                                                              flex-direction: column;
-                                                              justify-content: center;
-                                                              align-items: flex-start;
-                                                              font-size: 20px;
-                                                              font-family: "Open Sans",sans-serif;
-                                                              padding: 20px 15px;
-                                                              transition: opacity .2s ease-in-out, transform .2s ease-in-out; }
+@media screen and (max-width: 850px) { .social-container { width: 100%;
+                                                           margin: 0px 0px; } }
 
-                                                              .prueba-slider-content-change { opacity: 0;  }
 
-                                                              .prueba-slider-estrellas { width: 100%;
-                                                                                         display: flex;
-                                                                                         justify-content: flex-start;
-                                                                                         align-items: center;
-                                                                                         margin-bottom: 5px; }
-
-                                                                                         .prueba-estrellas { transform: scale(.8); }
-
-                                                              .prueba-slider-comentario { font-size: .7em;
-                                                                                          color: #444;
-                                                                                          text-align: left;
-                                                                                          margin-bottom: 15px; }
-
-                                                              .prueba-slider-nombre { font-size: .68em;
-                                                                                      text-align: left;
-                                                                                      font-weight: bold:;
-                                                                                      color: #1239; }
-
-                                      .prueba-derecha-container { width: 10%;
-                                                                  display: flex;
-                                                                  justify-content: center;
-                                                                  align-items: center; }
-
-                                                                  .prueba-derecha { cursor: pointer; }
-
-                                                                  .prueba-derecha-disable { cursor: default;
-                                                                                            opacity: .3; }
-       */
 
 
 /* Codigo seccion oferta*/
