@@ -296,6 +296,12 @@ ul { list-style-type: none; }
                         padding: 40px 15px;
                         border-top: 1px solid #000; }
 
+                        .objeciones-container h1 { font-size: 1.2em;
+                                                   color: #000;
+                                                   text-align: center;
+                                                   font-weight:  bold;
+                                                   margin-bottom: 20px; }
+
                         .objeciones-container p { font-size: 1em;
                                                   font-family: "Open Sans",sans-serif;
                                                   font-weight: 500;
